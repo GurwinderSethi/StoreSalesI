@@ -3,136 +3,83 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.client\\src\\pages\\sales.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|solutionrelative:storesalesinventory.client\\src\\pages\\sales.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\dtos\\sale\\updatesaledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\dtos\\sale\\updatesaledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\AppData\\Local\\Microsoft\\TypeScript\\5.2\\node_modules\\redux\\index.d.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\controllers\\salecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\controllers\\salecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.client\\src\\store\\slices\\saleslice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|solutionrelative:storesalesinventory.client\\src\\store\\slices\\saleslice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.client\\src\\pages\\stores.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|solutionrelative:storesalesinventory.client\\src\\pages\\stores.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\mappers\\productmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\mappers\\productmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.client\\src\\store\\slices\\storeslice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|solutionrelative:storesalesinventory.client\\src\\store\\slices\\storeslice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\dtos\\sale\\deletesaledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\dtos\\sale\\deletesaledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.client\\src\\validations\\salesvalidation.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|solutionrelative:storesalesinventory.client\\src\\validations\\salesvalidation.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.client\\src\\pages\\customers.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|solutionrelative:storesalesinventory.client\\src\\pages\\customers.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\dtos\\sale\\createsaledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\dtos\\sale\\createsaledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.client\\src\\validations\\customervalidation.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|solutionrelative:storesalesinventory.client\\src\\validations\\customervalidation.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\mappers\\salemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\mappers\\salemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.client\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|solutionrelative:storesalesinventory.client\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\dtos\\store\\deletestoredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\dtos\\store\\deletestoredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.client\\src\\store\\reducers\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|solutionrelative:storesalesinventory.client\\src\\store\\reducers\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\mappers\\storemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\mappers\\storemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.client\\src\\validations\\storevalidation.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|solutionrelative:storesalesinventory.client\\src\\validations\\storevalidation.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\dtos\\store\\createstoredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\dtos\\store\\createstoredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.client\\src\\pages\\products.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|solutionrelative:storesalesinventory.client\\src\\pages\\products.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\dtos\\store\\updatestoredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\dtos\\store\\updatestoredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.client\\src\\store\\slices\\productslice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|solutionrelative:storesalesinventory.client\\src\\store\\slices\\productslice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\dtos\\product\\updateproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\dtos\\product\\updateproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\dtos\\product\\getproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\dtos\\product\\getproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\dtos\\store\\getstoredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\dtos\\store\\getstoredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\mappers\\customermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\mappers\\customermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\dtos\\product\\deleteproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\dtos\\product\\deleteproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\dtos\\customer\\deletecustomerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\dtos\\customer\\deletecustomerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\dtos\\product\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\dtos\\product\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\dtos\\customer\\getcustomerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\dtos\\customer\\getcustomerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\dtos\\sale\\getsaledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\dtos\\sale\\getsaledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\models\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\models\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|solutionrelative:storesalesinventory.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\storesalesinventory.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\storesalesinventory.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D3F3EE-7CE5-449E-B65F-624584A294B2}|StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj|solutionrelative:storesalesinventory.server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.client\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|solutionrelative:storesalesinventory.client\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.client\\src\\store\\store.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|solutionrelative:storesalesinventory.client\\src\\store\\store.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|solutionrelative:storesalesinventory.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.client\\src\\store\\slices\\customerslice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|solutionrelative:storesalesinventory.client\\src\\store\\slices\\customerslice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.client\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|solutionrelative:storesalesinventory.client\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.client\\src\\inventorystore.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|solutionrelative:storesalesinventory.client\\src\\inventorystore.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.client\\src\\components\\genricmodal.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|solutionrelative:storesalesinventory.client\\src\\components\\genricmodal.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|c:\\users\\hp\\documents\\coding-practices\\mvp\\storesalesinventory\\storesalesinventory.client\\src\\components\\navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{76BB4602-3285-C13C-4DEF-DFA4EA359B1F}|storesalesinventory.client\\storesalesinventory.client.esproj|solutionrelative:storesalesinventory.client\\src\\components\\navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -142,12 +89,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -157,401 +100,283 @@
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UpdateSaleDto.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Sale\\UpdateSaleDto.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Dtos\\Sale\\UpdateSaleDto.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Sale\\UpdateSaleDto.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Dtos\\Sale\\UpdateSaleDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-18T10:30:10.478Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProductMapper.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Mappers\\ProductMapper.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Mappers\\ProductMapper.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Mappers\\ProductMapper.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Mappers\\ProductMapper.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAACYAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T06:47:30.35Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StoreController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Controllers\\StoreController.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Controllers\\StoreController.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Controllers\\StoreController.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Controllers\\StoreController.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAswFUAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T01:35:06.315Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DeleteStoreDto.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Store\\DeleteStoreDto.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Dtos\\Store\\DeleteStoreDto.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Store\\DeleteStoreDto.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Dtos\\Store\\DeleteStoreDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T02:07:39.367Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "GetStoreDto.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Store\\GetStoreDto.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Dtos\\Store\\GetStoreDto.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Store\\GetStoreDto.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Dtos\\Store\\GetStoreDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T02:07:42.544Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DeleteSaleDto.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Sale\\DeleteSaleDto.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Dtos\\Sale\\DeleteSaleDto.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Sale\\DeleteSaleDto.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Dtos\\Sale\\DeleteSaleDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-18T10:30:00.833Z"
+              "Title": "index.d.ts",
+              "DocumentMoniker": "C:\\Users\\hp\\AppData\\Local\\Microsoft\\TypeScript\\5.2\\node_modules\\redux\\index.d.ts",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Microsoft\\TypeScript\\5.2\\node_modules\\redux\\index.d.ts",
+              "ToolTip": "C:\\Users\\hp\\AppData\\Local\\Microsoft\\TypeScript\\5.2\\node_modules\\redux\\index.d.ts",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Microsoft\\TypeScript\\5.2\\node_modules\\redux\\index.d.ts",
+              "ViewState": "AgIAAAQBAAAAAAAAAAAQwCQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-08-09T12:12:50.822Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SaleController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Controllers\\SaleController.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Controllers\\SaleController.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Controllers\\SaleController.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Controllers\\SaleController.cs",
-              "ViewState": "AgIAAMIAAAAAAAAAAAA8wNAAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T21:51:54.813Z"
+              "Title": "saleSlice.js",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\store\\slices\\saleSlice.js",
+              "RelativeDocumentMoniker": "storesalesinventory.client\\src\\store\\slices\\saleSlice.js",
+              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\store\\slices\\saleSlice.js",
+              "RelativeToolTip": "storesalesinventory.client\\src\\store\\slices\\saleSlice.js",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAnwBkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-08-09T11:27:26.64Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SaleMapper.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Mappers\\SaleMapper.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Mappers\\SaleMapper.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Mappers\\SaleMapper.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Mappers\\SaleMapper.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAACIAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T21:43:42.037Z"
+              "DocumentIndex": 4,
+              "Title": "storeSlice.js",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\store\\slices\\storeSlice.js",
+              "RelativeDocumentMoniker": "storesalesinventory.client\\src\\store\\slices\\storeSlice.js",
+              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\store\\slices\\storeSlice.js",
+              "RelativeToolTip": "storesalesinventory.client\\src\\store\\slices\\storeSlice.js",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAnwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-07-14T10:49:54.021Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CreateSaleDto.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Sale\\CreateSaleDto.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Dtos\\Sale\\CreateSaleDto.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Sale\\CreateSaleDto.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Dtos\\Sale\\CreateSaleDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T07:56:00.431Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Controllers\\CustomerController.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Controllers\\CustomerController.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Controllers\\CustomerController.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Controllers\\CustomerController.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAAAHgAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T20:19:28.723Z"
+              "DocumentIndex": 0,
+              "Title": "Sales.jsx",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\pages\\Sales.jsx",
+              "RelativeDocumentMoniker": "storesalesinventory.client\\src\\pages\\Sales.jsx",
+              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\pages\\Sales.jsx",
+              "RelativeToolTip": "storesalesinventory.client\\src\\pages\\Sales.jsx",
+              "ViewState": "AgIAACUAAAAAAAAAAAAYwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-07-14T11:49:14.668Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAIwAAAAAAAAAAAAAAJgAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T04:42:17.408Z"
+              "Title": "Customers.jsx",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\pages\\Customers.jsx",
+              "RelativeDocumentMoniker": "storesalesinventory.client\\src\\pages\\Customers.jsx",
+              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\pages\\Customers.jsx",
+              "RelativeToolTip": "storesalesinventory.client\\src\\pages\\Customers.jsx",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAACIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-30T00:52:54.796Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CreateStoreDto.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Store\\CreateStoreDto.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Dtos\\Store\\CreateStoreDto.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Store\\CreateStoreDto.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Dtos\\Store\\CreateStoreDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T02:07:36.841Z"
+              "DocumentIndex": 7,
+              "Title": "customerValidation.js",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\validations\\customerValidation.js",
+              "RelativeDocumentMoniker": "storesalesinventory.client\\src\\validations\\customerValidation.js",
+              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\validations\\customerValidation.js",
+              "RelativeToolTip": "storesalesinventory.client\\src\\validations\\customerValidation.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-07-11T03:14:56.12Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "GetProductDto.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Product\\GetProductDto.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Dtos\\Product\\GetProductDto.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Product\\GetProductDto.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Dtos\\Product\\GetProductDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-18T10:33:05.176Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "StoreMapper.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Mappers\\StoreMapper.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Mappers\\StoreMapper.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Mappers\\StoreMapper.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Mappers\\StoreMapper.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAuwCEAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T02:23:12.246Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UpdateStoreDto.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Store\\UpdateStoreDto.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Dtos\\Store\\UpdateStoreDto.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Store\\UpdateStoreDto.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Dtos\\Store\\UpdateStoreDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T02:07:44.898Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UpdateProductDto.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Product\\UpdateProductDto.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Dtos\\Product\\UpdateProductDto.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Product\\UpdateProductDto.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Dtos\\Product\\UpdateProductDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-18T10:33:50.399Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "DeleteCustomerDto.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Customer\\DeleteCustomerDto.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Dtos\\Customer\\DeleteCustomerDto.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Customer\\DeleteCustomerDto.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Dtos\\Customer\\DeleteCustomerDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T00:11:10.706Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "DeleteProductDto.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Product\\DeleteProductDto.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Dtos\\Product\\DeleteProductDto.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Product\\DeleteProductDto.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Dtos\\Product\\DeleteProductDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T10:11:07.463Z"
+              "DocumentIndex": 3,
+              "Title": "Stores.jsx",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\pages\\Stores.jsx",
+              "RelativeDocumentMoniker": "storesalesinventory.client\\src\\pages\\Stores.jsx",
+              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\pages\\Stores.jsx",
+              "RelativeToolTip": "storesalesinventory.client\\src\\pages\\Stores.jsx",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAYwGkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-07-14T10:46:37.406Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "CustomerMapper.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Mappers\\CustomerMapper.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Mappers\\CustomerMapper.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Mappers\\CustomerMapper.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Mappers\\CustomerMapper.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAYwCoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T06:11:18.606Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Models\\Product.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Models\\Product.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Models\\Product.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T06:08:34.667Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "CreateProductDto.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Product\\CreateProductDto.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Dtos\\Product\\CreateProductDto.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Product\\CreateProductDto.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Dtos\\Product\\CreateProductDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-18T10:29:52.639Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "GetCustomerDto.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Customer\\GetCustomerDto.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Dtos\\Customer\\GetCustomerDto.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Customer\\GetCustomerDto.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Dtos\\Customer\\GetCustomerDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T10:43:35.17Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "GetSaleDto.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Sale\\GetSaleDto.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Dtos\\Sale\\GetSaleDto.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Dtos\\Sale\\GetSaleDto.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Dtos\\Sale\\GetSaleDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T21:42:32.531Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Models\\Customer.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Models\\Customer.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Models\\Customer.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Models\\Customer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-18T08:53:46.091Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Sale.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Models\\Sale.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Models\\Sale.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Models\\Sale.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Models\\Sale.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAqwAkAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T21:41:17.528Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\appsettings.json",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\appsettings.json",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\appsettings.json",
-              "RelativeToolTip": "StoreSalesInventory.Server\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-01T07:21:25.518Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "vite.config.js",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\vite.config.js",
-              "RelativeDocumentMoniker": "storesalesinventory.client\\vite.config.js",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\vite.config.js",
-              "RelativeToolTip": "storesalesinventory.client\\vite.config.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-24T01:50:03.113Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Program.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Program.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Program.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T03:09:37.841Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "StoreSalesInventory.Server.csproj",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj",
-              "RelativeToolTip": "StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAUwB4AAABgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-01T07:58:48.615Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "StoreSalesInventory.Server\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\StoreSalesInventory.Server\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "StoreSalesInventory.Server\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T03:07:56.581Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\index.html",
-              "RelativeDocumentMoniker": "storesalesinventory.client\\index.html",
-              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\index.html",
-              "RelativeToolTip": "storesalesinventory.client\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-11-24T01:46:44.08Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
               "Title": "main.jsx",
               "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\main.jsx",
               "RelativeDocumentMoniker": "storesalesinventory.client\\src\\main.jsx",
               "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\main.jsx",
               "RelativeToolTip": "storesalesinventory.client\\src\\main.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-11-24T01:45:49.689Z"
+              "WhenOpened": "2026-05-10T03:11:29.256Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 12,
+              "Title": "productSlice.js",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\store\\slices\\productSlice.js",
+              "RelativeDocumentMoniker": "storesalesinventory.client\\src\\store\\slices\\productSlice.js",
+              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\store\\slices\\productSlice.js",
+              "RelativeToolTip": "storesalesinventory.client\\src\\store\\slices\\productSlice.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-07-11T02:09:26.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "salesValidation.js",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\validations\\salesValidation.js",
+              "RelativeDocumentMoniker": "storesalesinventory.client\\src\\validations\\salesValidation.js",
+              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\validations\\salesValidation.js",
+              "RelativeToolTip": "storesalesinventory.client\\src\\validations\\salesValidation.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-07-25T04:53:18.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Navbar.jsx",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\components\\Navbar.jsx",
+              "RelativeDocumentMoniker": "storesalesinventory.client\\src\\components\\Navbar.jsx",
+              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\components\\Navbar.jsx",
+              "RelativeToolTip": "storesalesinventory.client\\src\\components\\Navbar.jsx",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwB8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-04-13T05:01:50.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Products.jsx",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\pages\\Products.jsx",
+              "RelativeDocumentMoniker": "storesalesinventory.client\\src\\pages\\Products.jsx",
+              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\pages\\Products.jsx",
+              "RelativeToolTip": "storesalesinventory.client\\src\\pages\\Products.jsx",
+              "ViewState": "AgIAABIAAAAAAAAAAAAnwBYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-07-11T02:05:29.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "store.js",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\store\\store.js",
+              "RelativeDocumentMoniker": "storesalesinventory.client\\src\\store\\store.js",
+              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\store\\store.js",
+              "RelativeToolTip": "storesalesinventory.client\\src\\store\\store.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-07-14T10:40:53.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\package.json",
+              "RelativeDocumentMoniker": "storesalesinventory.client\\package.json",
+              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\package.json",
+              "RelativeToolTip": "storesalesinventory.client\\package.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-28T10:08:19.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "storeValidation.js",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\validations\\storeValidation.js",
+              "RelativeDocumentMoniker": "storesalesinventory.client\\src\\validations\\storeValidation.js",
+              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\validations\\storeValidation.js",
+              "RelativeToolTip": "storesalesinventory.client\\src\\validations\\storeValidation.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-07-25T04:51:07.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GenricModal.jsx",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\components\\GenricModal.jsx",
+              "RelativeDocumentMoniker": "storesalesinventory.client\\src\\components\\GenricModal.jsx",
+              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\components\\GenricModal.jsx",
+              "RelativeToolTip": "storesalesinventory.client\\src\\components\\GenricModal.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-07-06T02:34:07.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "InventoryStore.css",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\InventoryStore.css",
+              "RelativeDocumentMoniker": "storesalesinventory.client\\src\\InventoryStore.css",
+              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\InventoryStore.css",
+              "RelativeToolTip": "storesalesinventory.client\\src\\InventoryStore.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-07-07T03:13:24.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "customerSlice.js",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\store\\slices\\customerSlice.js",
+              "RelativeDocumentMoniker": "storesalesinventory.client\\src\\store\\slices\\customerSlice.js",
+              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\store\\slices\\customerSlice.js",
+              "RelativeToolTip": "storesalesinventory.client\\src\\store\\slices\\customerSlice.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-07-11T02:12:05.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "App.jsx",
               "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\App.jsx",
               "RelativeDocumentMoniker": "storesalesinventory.client\\src\\App.jsx",
               "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\App.jsx",
               "RelativeToolTip": "storesalesinventory.client\\src\\App.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-11-24T01:42:28.894Z"
+              "WhenOpened": "2026-07-11T02:50:18.912Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "3570cdb0-ac81-4cb0-9d3e-3a4501d8e54c",
+        "Display": 0,
+        "X": 592,
+        "Y": 362,
+        "Width": 1496,
+        "Height": 768,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\store\\reducers\\index.js",
+              "RelativeDocumentMoniker": "storesalesinventory.client\\src\\store\\reducers\\index.js",
+              "ToolTip": "C:\\Users\\hp\\Documents\\coding-practices\\MVP\\StoreSalesInventory\\storesalesinventory.client\\src\\store\\reducers\\index.js",
+              "RelativeToolTip": "storesalesinventory.client\\src\\store\\reducers\\index.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-06-25T23:52:36.282Z",
+              "EditorCaption": ""
             }
           ]
         }

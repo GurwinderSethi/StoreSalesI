@@ -1,6 +1,15 @@
 [
   {
     "Name": "New Profile",
-    "Projects": []
+    "Projects": [
+      {
+        "Path": "storesalesinventory.client\\storesalesinventory.client.esproj",
+        "Action": "StartWithoutDebugging"
+      },
+      {
+        "Path": "StoreSalesInventory.Server\\StoreSalesInventory.Server.csproj",
+        "Action": "StartWithoutDebugging"
+      }
+    ]
   }
 ]
