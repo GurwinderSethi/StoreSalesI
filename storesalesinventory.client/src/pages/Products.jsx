@@ -15,7 +15,6 @@ import "../InventoryStore.css";
 function Products() {
     const dispatch = useDispatch();
     const products = useSelector(( state ) =>  state.products.products);
-    console.log('Products from Redux store:', products);
     const [open, setOpen] = useState(false);
     const [actionType, setActionType] = useState(''); // 'add' or 'edit']
     const [formData, setFormData] = useState({ productName: '', productPrice: '' });
@@ -23,7 +22,6 @@ function Products() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const apiUrl = import.meta.env.VITE_API_URL;
-    console.log('API URL:', apiUrl);
 
     const { register, handleSubmit, formState: { errors, isSubmitSuccessful }, reset } = useForm({
         resolver: yupResolver(productValidationSchema),
@@ -57,10 +55,8 @@ function Products() {
     const fetchProducts = async () => {
         try {
             setLoading(true);
-            //await customerValidationSchema.validate(formData);
             const response = await axios.get(`${apiUrl}/Product`);
             dispatch(setProducts(response.data)); // Update Redux store
-            console.log('Data fetched:', response.data);
             setLoading(false);
         } catch (error) {
             console.error('Error fetching data:', error);
@@ -71,22 +67,16 @@ function Products() {
     const onSubmit = async () => {
         if (actionType === 'Add') {
             try {
-                //await customerValidationSchema.validate(formData);
                 await axios.post(`${apiUrl}/Product`, formData);
-                console.log('Data saved:', formData);
                 dispatch(addProduct(formData)); // Update Redux store
                 await fetchProducts(); // Refresh data after adding
                 setOpen(false); // Close modal
-                //setFormData({ customerName: '', customerAddress: '' }); // Reset form
             } catch (error) {
                 console.error('Error saving data', error);
             }
         } else if (actionType === 'Edit') {
-            console.log('Form submitted:', formData);
             try {
-               // await customerValidationSchema.validate(formData);
                 await axios.put(`${apiUrl}/Product/${formData.productId}`, formData);
-                console.log('Data updated:', formData);
                 dispatch(setProducts(products.map(product => product.productId === formData.productId ? formData : product))); // Update Redux store
                 await fetchProducts(); // Refresh data after editing
                 setOpen(false); // Close modal
@@ -96,13 +86,11 @@ function Products() {
             }
 
         } else if (actionType === 'Delete') {
-            console.log('Deleting product:', `${apiUrl}/Product/${formData.productId}`);
             try {
                 await axios.delete(`${apiUrl}/Product/${formData.productId}`, {
                     headers: { 'Content-Type': 'application/json' },
                     data: { productId: formData.productId }
                 });
-                console.log('Product deleted:', formData);
                 dispatch(removeProduct(formData.productId)); // Update Redux store
                 await fetchProducts(); // Refresh data after deleting
                 setOpen(false); // Close modal

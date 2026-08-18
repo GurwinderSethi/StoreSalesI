@@ -15,7 +15,6 @@ import "../InventoryStore.css";
 function Stores() {
     const dispatch = useDispatch();
     const stores = useSelector((state) => state.stores.stores);
-    console.log('Stores from Redux store:', stores);
     const [open, setOpen] = useState(false);
     const [actionType, setActionType] = useState(''); // 'add' or 'edit']
     const [formData, setFormData] = useState({ storeName: '', storeAddress: '' });
@@ -23,7 +22,6 @@ function Stores() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const apiUrl = import.meta.env.VITE_API_URL;
-    console.log('API URL:', apiUrl);
 
     const { register, handleSubmit, formState: { errors, isSubmitSuccessful }, reset } = useForm({
         resolver: yupResolver(storeValidationSchema),
@@ -57,10 +55,8 @@ function Stores() {
     const fetchStores = async () => {
         try {
             setLoading(true);
-            //await customerValidationSchema.validate(formData);
             const response = await axios.get(`${apiUrl}/Store`);
             dispatch(setStores(response.data)); // Update Redux store
-            console.log('Data fetched:', response.data);
             setLoading(false);
         } catch (error) {
             console.error('Error fetching data:', error);
@@ -71,22 +67,16 @@ function Stores() {
     const onSubmit = async () => {
         if (actionType === 'Add') {
             try {
-                //await customerValidationSchema.validate(formData);
                 await axios.post(`${apiUrl}/Store`, formData);
-                console.log('Data saved:', formData);
                 dispatch(addStore(formData)); // Update Redux store
                 await fetchStores(); // Refresh data after adding
                 setOpen(false); // Close modal
-                //setFormData({ customerName: '', customerAddress: '' }); // Reset form
             } catch (error) {
                 console.error('Error saving data', error);
             }
         } else if (actionType === 'Edit') {
-            console.log('Form submitted:', formData);
             try {
-                // await customerValidationSchema.validate(formData);
                 await axios.put(`${apiUrl}/Store/${formData.storeId}`, formData);
-                console.log('Data updated:', formData);
                 dispatch(setStores(stores.map(store => store.storeId === formData.storeId ? formData : store))); // Update Redux store
                 await fetchStores(); // Refresh data after editing
                 setOpen(false); // Close modal
@@ -96,13 +86,11 @@ function Stores() {
             }
 
         } else if (actionType === 'Delete') {
-            console.log('Deleting store:', `${apiUrl}/Store/${formData.storeId}`);
             try {
                 await axios.delete(`${apiUrl}/Store/${formData.storeId}`, {
                     headers: { 'Content-Type': 'application/json' },
                     data: { storeId: formData.storeId }
                 });
-                console.log('Store deleted:', formData);
                 dispatch(removeStore(formData.storeId)); // Update Redux store
                 await fetchStores(); // Refresh data after deleting
                 setOpen(false); // Close modal

@@ -15,7 +15,6 @@ import "../InventoryStore.css";
 function Customers() {
     const dispatch = useDispatch();
     const customers = useSelector((state) => state.customers.customers);
-    console.log('Customers from Redux store:', customers);
     const [open, setOpen] = useState(false);
     const [actionType, setActionType] = useState(''); // 'add' or 'edit']
     const [formData, setFormData] = useState({ customerName: '', customerAddress: '' });
@@ -23,7 +22,6 @@ function Customers() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const apiUrl = import.meta.env.VITE_API_URL;
-    console.log('API URL:', apiUrl);
 
     const { register, handleSubmit, formState: { errors,isSubmitSuccessful},reset } = useForm({
         resolver: yupResolver(customerValidationSchema),
@@ -57,10 +55,8 @@ function Customers() {
     const fetchCustomers = async () => {
         try {
             setLoading(true);
-            //await customerValidationSchema.validate(formData);
             const response = await axios.get(`${apiUrl}/Customer`);
             dispatch(setCustomers(response.data)); // Update Redux store
-            console.log('Data fetched:', response.data);
             setLoading(false);
         } catch (error) {
             console.error('Error fetching data:', error);
@@ -71,22 +67,17 @@ function Customers() {
     const onSubmit = async () => {
         if (actionType === 'Add') {
             try {
-                //await customerValidationSchema.validate(formData);
                 await axios.post(`${apiUrl}/Customer`, formData);
-                console.log('Data saved:', formData);
                 dispatch(addCustomer(formData)); // Update Redux store
                 await fetchCustomers(); // Refresh data after adding
                 setOpen(false); // Close modal
-                //setFormData({ customerName: '', customerAddress: '' }); // Reset form
             } catch (error) {
                 console.error('Error saving data', error);
             }
         } else if (actionType === 'Edit') {
-            console.log('Form submitted:', formData);
             try {
                 await customerValidationSchema.validate(formData);
                 await axios.put(`${apiUrl}/Customer/${formData.customerId}`, formData);
-                console.log('Data updated:', formData);
                 await fetchCustomers(); // Refresh data after editing
                 setOpen(false); // Close modal
                 setFormData({ customerName: '', customerAddress: '' }); // Reset form
@@ -95,12 +86,10 @@ function Customers() {
             }
 
         } else if (actionType === 'Delete') {
-            console.log('Deleting customer:', `${apiUrl}/Customer/${formData.customerId}`);
             try {
                 await axios.delete(`${apiUrl}/Customer/${formData.customerId}`, {
                     headers: { 'Content-Type': 'application/json' },
                     data: { customerId: formData.customerId } });
-                console.log('Customer deleted:', formData);
                 dispatch(removeCustomer(formData.customerId)); // Update Redux store
                 await fetchCustomers(); // Refresh data after deleting
                 setOpen(false); // Close modal

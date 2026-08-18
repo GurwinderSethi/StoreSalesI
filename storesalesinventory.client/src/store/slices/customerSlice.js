@@ -7,16 +7,15 @@ const customerSlice = createSlice({
     },
     reducers: {
         setCustomers(state, action) {
-            console.log('Setting customers:', action.payload);
+           
             state.customers = action.payload;
         },
         addCustomer(state, action) {
-            console.log('Adding customer:', action.payload);
+           
             state.customers.push(action.payload);
         },
         removeCustomer(state, action) {
-            console.log('Removing customer:', action.payload);
-            state.customers = state.customers.filter(customer => customer.id !== action.payload);
+             state.customers = state.customers.filter(customer => customer.id !== action.payload);
         },
     },
 });

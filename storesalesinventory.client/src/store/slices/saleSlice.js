@@ -7,16 +7,16 @@ const saleSlice = createSlice({
     },
     reducers: {
         setSales(state, action) {
-            console.log('Setting sales:', action.payload);
+            
             state.sales = action.payload;
-            console.log('state.sales =', state.sales);
+           
         },
         addSale(state, action) {
-            console.log('Adding sale:', action.payload);
+           
             state.sales.push(action.payload);
         },
         removeSale(state, action) {
-            console.log('Removing sale:', action.payload);
+            
             state.sales = state.sales.filter(sale => sale.id !== action.payload);
         },
     },

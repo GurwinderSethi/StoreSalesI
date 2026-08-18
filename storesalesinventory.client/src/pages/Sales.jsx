@@ -11,7 +11,6 @@ import ActionButton from "../components/ActionButton";
 import { saleValidationSchema } from "../validations/salesValidation";
 import { useForm,Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-//import { DateInput, DateTimeInput} from 'semantic-ui-calendar-react';
 import "../InventoryStore.css";
 
 
@@ -22,10 +21,7 @@ function Sales() {
     const customers = useSelector((state) => state.customers.customers);
     const products = useSelector((state) => state.products.products);
     const stores = useSelector((state) => state.stores.stores);
-    console.log('Sales from Redux store:', sales);
-    console.log('Customers from Redux store:', customers);
-    console.log('Products from Redux store:', products);
-    console.log('Stores from Redux store:', stores);
+   
     const [open, setOpen] = useState(false);
     const [actionType, setActionType] = useState(''); // 'add' or 'edit']
     const [formData, setFormData] = useState({
@@ -42,7 +38,7 @@ function Sales() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const apiUrl = import.meta.env.VITE_API_URL;
-    console.log('API URL:', apiUrl);
+   
 
     const { register,control, handleSubmit, formState: { errors, isSubmitSuccessful }, reset } = useForm({
         resolver: yupResolver(saleValidationSchema),
@@ -55,79 +51,73 @@ function Sales() {
         text: customer.customerName,
         value: customer.customerId
     }));
-    console.log('Customer Options:', customerOptions);
+    
     const productOptions = products.map(product => ({
         key: product.productId,
         text: product.productName,
         value: product.productId
     }));
-    console.log('Product Options:', productOptions);
+   
     const storeOptions = stores.map(store => ({
         key: store.storeId,
         text: store.storeName,
         value: store.storeId
     }));
-    console.log('Store Options:', storeOptions);
+   
 
-    //const handleChange = (e) => {
-    //    console.log('Input changed:', e.target.name, e.target.value);
-    //    console.log('Current formData before change:', formData);
-    //    setFormData({ ...formData, [e.target.name]: e.target.value });
-    //    console.log('Updated formData after change:', formData);
-    // };
-    //const handleChange = (e, { name, value }) => {
-    //    console.log('Input changed:', name, value);
-    //    setFormData({ ...formData, [name]: value });
-    //    console.log('Updated formData after change:', formData);
-    //};
+    
     const handleChange = (e, { name, value}) => {
-        console.log('Input changed flag:', name, value);
+       
         if (name === 'customer') {
             customerOptions.forEach(option => {
                 if (option.value === value) {
-                    console.log('Selected customer:', option.text, option.value);
+                   
                     setFormData((prev) => ({ ...prev, customerName: option.text, customer_Id: option.value }));
-                    console.log('Updated formData after change:', formData);
+                   
                 }
             });
         }
         if (name === 'product') {
             productOptions.forEach(option => {
                 if (option.value === value) {
-                    console.log('Selected product:', option.text, option.value);
+                   
                     setFormData((prev) => ({ ...prev, productName: option.text, product_Id: option.value }));
-                    console.log('Updated formData after change:', formData);
+                   
                 }
             });
         }
         if (name === 'store') {
             storeOptions.forEach(option => {
                 if (option.value === value) {
-                    console.log('Selected store:', option.text, option.value);
+                    
                     setFormData((prev) => ({ ...prev, storeName: option.text, store_Id: option.value }));
-                    console.log('Updated formData after change:', formData);
+                    
                 }
             });
         }
         if (name === 'dateSold') {
-            console.log('Selected dateSold:', value);
+          
             setFormData((prev) => ({ ...prev, dateSold: value }));
-            console.log('Updated formData after change:', formData);
+            
         }
     };
     const handleAddSale = () => {
+       
         setFormData({
             saleId: 0, product_Id: formData.product_Id, customer_Id: formData.customerId,
             store_Id: formData.store_Id, customerName: formData.customerName, productName: formData.productName, storeName: formData.storeName, dateSold: formData.dateSold
         }); // Reset form
-        console.log('Form data reset for adding sale:', formData);
+        //setFormData({
+        //      customerName: '', productName:'', storeName: '', dateSold: ''
+        //});
+       
         setActionType('Add')
         setOpen(true)
-        // reset({ customerName: '', productName: '', storeName: '', dateSold: '' }); // Reset form validation state
-        reset({
-            saleId: 0, product_Id: formData.productId, customer_Id: formData.customerId,
-            store_Id: formData.storeId, customerName: formData.customerName, productName: formData.productName, storeName: formData.storeName, dateSold: formData.dateSold
-        })
+        reset({ customerName: '', productName: '', storeName: '', dateSold: '' }); // Reset form validation state
+        //reset({
+        //    saleId: 0, product_Id: formData.productId, customer_Id: formData.customerId,
+        //    store_Id: formData.storeId, customerName: formData.customerName, productName: formData.productName, storeName: formData.storeName, dateSold: formData.dateSold
+        //})
 
     }
     const handleEditSale = (sale) => {
@@ -145,7 +135,6 @@ function Sales() {
     const fetchSales = async () => {
         try {
             setLoading(true);
-            //await salesValidationSchema.validate(formData);
             const response = await axios.get(`${apiUrl}/Sale`);
             const customersResponse = await axios.get(`${apiUrl}/Customer`);
             const productsResponse = await axios.get(`${apiUrl}/Product`);
@@ -154,7 +143,6 @@ function Sales() {
             dispatch(setCustomers(customersResponse.data)); // Update Redux store with customers
             dispatch(setProducts(productsResponse.data)); // Update Redux store with products
             dispatch(setStores(storesResponse.data)); // Update Redux store with stores
-            console.log('Data fetched:', response.data);
             setLoading(false);
         } catch (error) {
             console.error('Error fetching data:', error);
@@ -163,14 +151,10 @@ function Sales() {
         }
     };
     const onSubmit = async () => {
-        console.log('Form submitted with actionType:', actionType);
         if (actionType === 'Add') {
-            console.log('Form submitted-----------:', formData);
             try {
-                //await salesValidationSchema.validate(formData);
-                console.log('Form submitted:', formData);
+                
                 await axios.post(`${apiUrl}/Sale`, formData);
-                console.log('Data saved:', formData);
                 dispatch(addSale(formData)); // Update Redux store
                 await fetchSales(); // Refresh data after adding
                 setOpen(false); // Close modal
@@ -179,11 +163,10 @@ function Sales() {
                 console.error('Error saving data', error);
             }
         } else if (actionType === 'Edit') {
-            console.log('Form submitted:', formData);
+            
             try {
                 await saleValidationSchema.validate(formData);
                 await axios.put(`${apiUrl}/Sale/${formData.saleId}`, formData);
-                console.log('Data updated:', formData);
                 await fetchSales(); // Refresh data after editing
                 setOpen(false); // Close modal
                 setFormData({ customerName: '', productName: '', storeName: '', dateSold: '' }); // Reset form
@@ -192,14 +175,12 @@ function Sales() {
             }
 
         } else if (actionType === 'Delete') {
-            console.log('Deleting sale:', `${apiUrl}/Sale/${formData.saleId}`);
-            console.log('Form data for deletion:',{ saleId: formData.saleId });
+           
             try {
                 await axios.delete(`${apiUrl}/Sale/${formData.saleId}`, {
                     headers: { 'Content-Type': 'application/json' },
                     data: { saleId: formData.saleId }
                 });
-                console.log('Sale deleted:', formData);
                 dispatch(removeSale(formData.saleId)); // Update Redux store
                 await fetchSales(); // Refresh data after deleting
                 setOpen(false); // Close modal
@@ -238,19 +219,13 @@ function Sales() {
                 <Form.Field>
                     <label> Date Sold</label>
                     <Input type="datetime-local" {...register("dateSold")} name="dateSold" value={formData.dateSold} onChange={handleChange} />
-                    {/*<DateTimeInput*/}
-                    {/*    name="dateSold"*/}
-                    {/*    placeholder="Date"*/}
-                    {/*    value={formData.dateSold}*/}
-                    {/*    dateFormat="YYYY-MM-DD"*/}
-                    {/*    onChange={handleChange}*/}
-                    {/*/>*/}
+                    
                     
                     <p className="error-message">{errors.dateSold?.message}</p>
                  </Form.Field>
                  <Form.Field>
                     <label>Customer</label>
-                    {/*<Input {...register("customerName")} name="customerName" value={formData.customerName} onChange={handleChange} />*/}
+                   
                    
                     <Controller
                         name="customer"
@@ -273,14 +248,10 @@ function Sales() {
                   <p className="error-message">{errors.customer?.message}</p>
                 </Form.Field>
             
-            {/*<Form.Field>*/}
-            {/*    <label>Product</label>*/}
-            {/*    <Input {...register("productName")} name="productName" value={formData.productName} onChange={handleChange} />*/}
-            {/*    <p className="error-message">{errors.productName?.message}</p>*/}
-                {/*</Form.Field>*/}
+           
                 <Form.Field>
                     <label>Product</label>
-                    {/*<Input {...register("customerName")} name="customerName" value={formData.customerName} onChange={handleChange} />*/}
+                   
                     <Controller
                         name="product"
                         control={control}
@@ -299,14 +270,10 @@ function Sales() {
                     />
                     <p className="error-message">{errors.product?.message}</p>
                 </Form.Field>
-            {/*<Form.Field>*/}
-            {/*    <label>Store</label>*/}
-            {/*    <Input {...register("storeName")} name="storeName" value={formData.storeName} onChange={handleChange} />*/}
-            {/*    <p className="error-message">{errors.storeName?.message}</p>*/}
-                {/*</Form.Field>*/}
+          
                 <Form.Field>
                     <label>Store</label>
-                    {/*<Input {...register("customerName")} name="customerName" value={formData.customerName} onChange={handleChange} />*/}
+                   
                     <Controller
                         name="store"
                         control={control}

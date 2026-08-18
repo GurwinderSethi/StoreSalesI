@@ -2,7 +2,7 @@ import React from 'react';
 import { Modal, Button, Header } from 'semantic-ui-react';
 
 const GenericModal = ({ open, setOpen, title, label, formContent, onSubmit }) => {
-    console.log('GenericModal props:', {open, setOpen, title, label, formContent, onSubmit });
+   
     return (
         <Modal
             onClose={() => setOpen(false)}
