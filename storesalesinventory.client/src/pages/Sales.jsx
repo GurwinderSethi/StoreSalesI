@@ -25,7 +25,7 @@ function Sales() {
     const [open, setOpen] = useState(false);
     const [actionType, setActionType] = useState(''); // 'add' or 'edit']
     const [formData, setFormData] = useState({
-        saleId: 0,
+       // saleId: 0,
         product_Id: 0,
         customer_Id : 0,
         store_Id: 0,
@@ -42,7 +42,13 @@ function Sales() {
 
     const { register,control, handleSubmit, formState: { errors, isSubmitSuccessful }, reset } = useForm({
         resolver: yupResolver(saleValidationSchema),
-        mode: 'onTouched'
+        mode: 'onTouched',
+        defaultValues: {
+            customer: '',
+            product: '',
+            store: '',
+            dateSold: ''
+        },
        
     });
     
@@ -67,45 +73,47 @@ function Sales() {
 
     
     const handleChange = (e, { name, value}) => {
-       
-        if (name === 'customer') {
-            customerOptions.forEach(option => {
-                if (option.value === value) {
+        console.log('handleChange called with name:', name, 'and value:', value);
+        //if (name === 'customer') {
+        //    customerOptions.forEach(option => {
+        //        if (option.value === value) {
                    
-                    setFormData((prev) => ({ ...prev, customerName: option.text, customer_Id: option.value }));
+        //            setFormData((prev) => ({ ...prev, customerName: option.text, customer_Id: option.value }));
+        //            console.log('Updated formData with customer:', formData);
+        //        }
+        //    });
+        //}
+        //if (name === 'product') {
+        //    productOptions.forEach(option => {
+        //        if (option.value === value) {
                    
-                }
-            });
-        }
-        if (name === 'product') {
-            productOptions.forEach(option => {
-                if (option.value === value) {
-                   
-                    setFormData((prev) => ({ ...prev, productName: option.text, product_Id: option.value }));
-                   
-                }
-            });
-        }
-        if (name === 'store') {
-            storeOptions.forEach(option => {
-                if (option.value === value) {
+        //            setFormData((prev) => ({ ...prev, productName: option.text, product_Id: option.value }));
+        //            console.log('Updated formData with product:', formData);
+        //        }
+        //    });
+        //}
+        //if (name === 'store') {
+        //    storeOptions.forEach(option => {
+        //        if (option.value === value) {
                     
-                    setFormData((prev) => ({ ...prev, storeName: option.text, store_Id: option.value }));
-                    
-                }
-            });
-        }
+        //            setFormData((prev) => ({ ...prev, storeName: option.text, store_Id: option.value }));
+        //            console.log('Updated formData with store:', formData);  
+        //        }
+        //    });
+        //}
         if (name === 'dateSold') {
           
             setFormData((prev) => ({ ...prev, dateSold: value }));
-            
+            console.log('Updated formData with dateSold:', formData);
         }
     };
     const handleAddSale = () => {
        
         setFormData({
-            saleId: 0, product_Id: formData.product_Id, customer_Id: formData.customerId,
-            store_Id: formData.store_Id, customerName: formData.customerName, productName: formData.productName, storeName: formData.storeName, dateSold: formData.dateSold
+            product_Id: formData.product_Id, customer_Id: formData.customer_Id,
+            store_Id: formData.store_Id, dateSold: formData.dateSold, customerName: formData.customerName, productName: formData.productName, storeName: formData.storeName
+            //saleId: 0, product_Id: formData.product_Id, customer_Id: formData.customer_Id,
+            //store_Id: formData.store_Id, customerName: formData.customerName, productName: formData.productName, storeName: formData.storeName, dateSold: formData.dateSold
         }); // Reset form
         //setFormData({
         //      customerName: '', productName:'', storeName: '', dateSold: ''
@@ -113,24 +121,24 @@ function Sales() {
        
         setActionType('Add')
         setOpen(true)
-        reset({ customerName: '', productName: '', storeName: '', dateSold: '' }); // Reset form validation state
+        reset({ customer: '', product: '', store: '', dateSold: '' }); // Reset form validation state
         //reset({
         //    saleId: 0, product_Id: formData.productId, customer_Id: formData.customerId,
         //    store_Id: formData.storeId, customerName: formData.customerName, productName: formData.productName, storeName: formData.storeName, dateSold: formData.dateSold
         //})
-
+        console.log('handleAddSale called, formData reset to:', formData);
     }
     const handleEditSale = (sale) => {
         setActionType('Edit')
         setFormData(sale)
         setOpen(true)
-           reset({ customerName: sale.customerName, productName: sale.productName, storeName: sale.storeName, dateSold: sale.dateSold }); // Reset form validation state
+        reset({ customer: sale.customerName, product: sale.productName, store: sale.storeName, dateSold: sale.dateSold }); // Reset form validation state
     }
     const handleDeleteSale = (sale) => {
         setActionType('Delete')
         setFormData(sale)
         setOpen(true)
-        reset({ customerName: sale.customerName, productName: sale.productName, storeName: sale.storeName, dateSold: sale.dateSold }); // Reset form validation state
+        reset({ customer: sale.customerName, product: sale.productName, store: sale.storeName, dateSold: sale.dateSold }); // Reset form validation state
     }
     const fetchSales = async () => {
         try {
@@ -153,7 +161,7 @@ function Sales() {
     const onSubmit = async () => {
         if (actionType === 'Add') {
             try {
-                
+                console.log('Submitting formData for addition:', formData);
                 await axios.post(`${apiUrl}/Sale`, formData);
                 dispatch(addSale(formData)); // Update Redux store
                 await fetchSales(); // Refresh data after adding
@@ -165,21 +173,35 @@ function Sales() {
         } else if (actionType === 'Edit') {
             
             try {
-                await saleValidationSchema.validate(formData);
+               // await saleValidationSchema.validate(formData);
                 await axios.put(`${apiUrl}/Sale/${formData.saleId}`, formData);
                 await fetchSales(); // Refresh data after editing
                 setOpen(false); // Close modal
-                setFormData({ customerName: '', productName: '', storeName: '', dateSold: '' }); // Reset form
+                // setFormData({ customerN: '', product: '', store: '', dateSold: '' }); // Reset form
+                setFormData({
+                    product_Id: 0, customer_Id: 0,
+                    store_Id:0, dateSold: '', customerName: '', productName: '', storeName: ''
+                }); // Reset form
             } catch (error) {
                 console.error('Error updating data', error);
             }
 
         } else if (actionType === 'Delete') {
+            console.log('Deleting sale with ID:', formData.saleId);
            
             try {
                 await axios.delete(`${apiUrl}/Sale/${formData.saleId}`, {
                     headers: { 'Content-Type': 'application/json' },
-                    data: { saleId: formData.saleId }
+                    data: {
+                        saleId: formData.saleId,
+                        "product_Id": formData.product_Id,
+                        "customer_Id": formData.customer_Id,
+                        "store_Id": formData.store_Id,
+                        "dateSold": formData.dateSold,
+                        "customerName": formData.customerName,
+                        "productName": formData.productName,
+                        "storeName": formData.storeName
+                    }
                 });
                 dispatch(removeSale(formData.saleId)); // Update Redux store
                 await fetchSales(); // Refresh data after deleting
@@ -217,11 +239,9 @@ function Sales() {
     ) : (
         <Form>
                 <Form.Field>
-                    <label> Date Sold</label>
-                    <Input type="datetime-local" {...register("dateSold")} name="dateSold" value={formData.dateSold} onChange={handleChange} />
-                    
-                    
-                    <p className="error-message">{errors.dateSold?.message}</p>
+                <label> Date Sold</label>
+                <Input type="datetime-local" {...register("dateSold")} name="dateSold" value={formData.dateSold} onChange={handleChange} />
+                    {errors.dateSold &&( <p className="error-message">{errors.dateSold?.message}</p>)}
                  </Form.Field>
                  <Form.Field>
                     <label>Customer</label>
@@ -232,23 +252,39 @@ function Sales() {
                         control={control}
                         render={({ field }) => (
                             <Form.Dropdown
-                                {...field}
+
                                  fluid
                                 selection  
                                  search
                                  options={customerOptions}
                                 placeholder='Select Customer'
-                                onChange={handleChange}
-                                value={field.value}
-                               
-                                
-                              />
-                        )}
-                    />
-                  <p className="error-message">{errors.customer?.message}</p>
+                                value={field.value||''}
+                                onChange={(e, data) => {
+              const selectedCustomer = customerOptions.find(
+                option => option.value === data.value
+              );
+
+              field.onChange(data.value);
+
+              if (selectedCustomer) {
+                setFormData(prev => ({
+                  ...prev,
+                  customerName: selectedCustomer.text,
+                  customer_Id: selectedCustomer.value,
+                }));
+              }
+            }}
+          />
+        )}
+      />
+                    {/*<p className="error-message">{errors.customer?.message}</p>*/}
+                    {errors.customer && (
+                        <p className="error-message">
+                            {errors.customer.message}
+                        </p>
+                    )}
                 </Form.Field>
-            
-           
+
                 <Form.Field>
                     <label>Product</label>
                    
@@ -263,12 +299,26 @@ function Sales() {
                                 options={productOptions}
                                 placeholder='Select Product'
                                 name={field.name}
-                                value={field.value}
-                                onChange={handleChange}
+                                value={field.value||''}
+                                onChange={(e, data) => {
+                                    const selectedProduct = productOptions.find(
+                                        option => option.value === data.value
+                                    );
+
+                                    field.onChange(data.value);
+
+                                    if (selectedProduct) {
+                                        setFormData(prev => ({
+                                            ...prev,
+                                            productName: selectedProduct.text,
+                                            product_Id: selectedProduct.value,
+                                        }));
+                                    }
+                                }}
                             />
                         )}
                     />
-                    <p className="error-message">{errors.product?.message}</p>
+                    {errors.product && (<p className="error-message">{errors.product?.message}</p>)}
                 </Form.Field>
           
                 <Form.Field>
@@ -278,6 +328,16 @@ function Sales() {
                         name="store"
                         control={control}
                         render={({ field }) => (
+                            //<Form.Dropdown
+                            //    fluid
+                            //    selection
+                            //    search
+                            //    options={storeOptions}
+                            //    placeholder='Select Store'
+                            //    name={field.name}
+                            //    value={field.value}
+                            //    onChange={handleChange}
+                            ///>
                             <Form.Dropdown
                                 fluid
                                 selection
@@ -285,12 +345,26 @@ function Sales() {
                                 options={storeOptions}
                                 placeholder='Select Store'
                                 name={field.name}
-                                value={field.value}
-                                onChange={handleChange}
+                                value={field.value||''}
+                                onChange={(e, data) => {
+                                    const selectedStore = storeOptions.find(
+                                        option => option.value === data.value
+                                    );
+
+                                    field.onChange(data.value);
+
+                                    if (selectedStore) {
+                                        setFormData(prev => ({
+                                            ...prev,
+                                            storeName: selectedStore.text,
+                                            store_Id: selectedStore.value,
+                                        }));
+                                    }
+                                }}
                             />
                         )}
                     />
-                    <p className="error-message">{errors.store?.message}</p>
+                    {errors.store && (<p className="error-message">{errors.store?.message}</p>)}
                 </Form.Field>
         </Form>
     )
@@ -300,7 +374,12 @@ function Sales() {
                 <div style={{ marginLeft: '120px' }}>
 
                     <ActionButton primary
-                        style={{ position: 'absolute', top: '70px', paddingBelow: '100px' }}
+                        style={{
+                            position: 'absolute',
+                            top: '70px',
+                            paddingBottom: '11px'
+                        }}
+
                         id={"btnAddSale"}
                         type={"button"}
                         label={"Add Sale"}

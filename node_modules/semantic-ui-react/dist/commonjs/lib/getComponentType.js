@@ -1,0 +1,46 @@
+"use strict";
+
+exports.__esModule = true;
+exports.default = void 0;
+/**
+ * Returns a createElement() type based on the props of the Component.
+ * Useful for calculating what type a component should render as.
+ *
+ * @param {object} props A ReactElement props object
+ * @param {object} [options={}]
+ * @param {string|Function} [options.defaultAs] A default element type.
+ * @param {Function} [options.getDefault] A function that returns a default element type.
+ * @returns {string|Function} A ReactElement type
+ */
+function getComponentType(props, options) {
+  if (options === void 0) {
+    options = {};
+  }
+  var _options = options,
+    defaultAs = _options.defaultAs,
+    getDefault = _options.getDefault;
+
+  // ----------------------------------------
+  // user defined "as" element type
+
+  if (props.as && props.as !== defaultAs) return props.as;
+
+  // ----------------------------------------
+  // computed default element type
+
+  if (getDefault) {
+    var computedDefault = getDefault();
+    if (computedDefault) return computedDefault;
+  }
+
+  // ----------------------------------------
+  // infer anchor links
+
+  if (props.href) return 'a';
+
+  // ----------------------------------------
+  // use defaultProp or 'div'
+
+  return defaultAs || 'div';
+}
+var _default = exports.default = getComponentType;
