@@ -74,33 +74,9 @@ function Sales() {
     
     const handleChange = (e, { name, value}) => {
         console.log('handleChange called with name:', name, 'and value:', value);
-        //if (name === 'customer') {
-        //    customerOptions.forEach(option => {
-        //        if (option.value === value) {
-                   
-        //            setFormData((prev) => ({ ...prev, customerName: option.text, customer_Id: option.value }));
-        //            console.log('Updated formData with customer:', formData);
-        //        }
-        //    });
-        //}
-        //if (name === 'product') {
-        //    productOptions.forEach(option => {
-        //        if (option.value === value) {
-                   
-        //            setFormData((prev) => ({ ...prev, productName: option.text, product_Id: option.value }));
-        //            console.log('Updated formData with product:', formData);
-        //        }
-        //    });
-        //}
-        //if (name === 'store') {
-        //    storeOptions.forEach(option => {
-        //        if (option.value === value) {
-                    
-        //            setFormData((prev) => ({ ...prev, storeName: option.text, store_Id: option.value }));
-        //            console.log('Updated formData with store:', formData);  
-        //        }
-        //    });
-        //}
+       
+        
+        
         if (name === 'dateSold') {
           
             setFormData((prev) => ({ ...prev, dateSold: value }));
@@ -112,20 +88,14 @@ function Sales() {
         setFormData({
             product_Id: formData.product_Id, customer_Id: formData.customer_Id,
             store_Id: formData.store_Id, dateSold: formData.dateSold, customerName: formData.customerName, productName: formData.productName, storeName: formData.storeName
-            //saleId: 0, product_Id: formData.product_Id, customer_Id: formData.customer_Id,
-            //store_Id: formData.store_Id, customerName: formData.customerName, productName: formData.productName, storeName: formData.storeName, dateSold: formData.dateSold
+           
         }); // Reset form
-        //setFormData({
-        //      customerName: '', productName:'', storeName: '', dateSold: ''
-        //});
+        
        
         setActionType('Add')
         setOpen(true)
         reset({ customer: '', product: '', store: '', dateSold: '' }); // Reset form validation state
-        //reset({
-        //    saleId: 0, product_Id: formData.productId, customer_Id: formData.customerId,
-        //    store_Id: formData.storeId, customerName: formData.customerName, productName: formData.productName, storeName: formData.storeName, dateSold: formData.dateSold
-        //})
+        
         console.log('handleAddSale called, formData reset to:', formData);
     }
     const handleEditSale = (sale) => {
@@ -166,7 +136,7 @@ function Sales() {
                 dispatch(addSale(formData)); // Update Redux store
                 await fetchSales(); // Refresh data after adding
                 setOpen(false); // Close modal
-                //setFormData({ customerName: '', customerAddress: '' }); // Reset form
+                
             } catch (error) {
                 console.error('Error saving data', error);
             }
@@ -177,7 +147,7 @@ function Sales() {
                 await axios.put(`${apiUrl}/Sale/${formData.saleId}`, formData);
                 await fetchSales(); // Refresh data after editing
                 setOpen(false); // Close modal
-                // setFormData({ customerN: '', product: '', store: '', dateSold: '' }); // Reset form
+               
                 setFormData({
                     product_Id: 0, customer_Id: 0,
                     store_Id:0, dateSold: '', customerName: '', productName: '', storeName: ''
