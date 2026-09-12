@@ -1,0 +1,176 @@
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+/* ============================
+   Stores page
+   ============================ */
+
+.customers-container {
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 80px auto 40px auto !important;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.customers-content {
+    width: 100%;
+}
+
+
+/* Add Store button */
+
+.customers-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+
+/* Table wrapper */
+
+.customers-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* Table */
+
+.customers-table {
+    width: 100% !important;
+}
+
+    .customers-table td {
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+
+
+        /* Action columns */
+
+        .customers-table th:nth-child(3),
+        .customers-table th:nth-child(4),
+        .customers-table td:nth-child(3),
+        .customers-table td:nth-child(4) {
+            width: 100px;
+            text-align: center;
+        }
+        /* Action buttons */
+.customers-action-button {
+    border-radius: 20px !important;
+    min-width: 90px !important;
+    padding: 8px 14px !important;
+}
+
+/* ============================
+   Tablet
+   ============================ */
+
+@media screen and (max-width: 768px) {
+
+    .customers-container {
+        margin-top: 70px !important;
+        padding: 0 15px;
+    }
+
+    .customers-header {
+        justify-content: flex-start;
+    }
+
+    .customers-table {
+        font-size: 14px;
+    }
+
+        .customers-table th:nth-child(3),
+        .customers-table th:nth-child(4),
+        .customers-table td:nth-child(3),
+        .customers-table td:nth-child(4) {
+            width: 80px;
+        }
+}
+
+
+/* ============================
+   Mobile
+   ============================ */
+
+@media screen and (max-width: 600px) {
+
+    .customers-container {
+        margin-top: 60px !important;
+        padding: 0 10px;
+    }
+
+    .customers-header {
+        justify-content: stretch;
+        margin-bottom: 15px;
+    }
+
+        .customers-header button {
+            width: 100%;
+        }
+
+
+    /* Hide table headings */
+
+    .customers-table thead {
+        display: none;
+    }
+
+
+    /* Convert table into cards */
+
+    .customers-table,
+    .customers-table tbody,
+    .customers-table tr,
+    .customers-table td {
+        display: block !important;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+
+        /* Customer card */
+
+        .customers-table tr {
+            margin-bottom: 15px;
+            border: 1px solid #ddd !important;
+            border-radius: 8px;
+            padding: 10px;
+            background: white;
+        }
+
+
+        /* Cells */
+
+        .customers-table td {
+            border: none !important;
+            padding: 8px !important;
+            text-align: left !important;
+        }
+
+
+            /* Mobile labels */
+
+            .customers-table td::before {
+                content: attr(data-label);
+                display: block;
+                font-weight: bold;
+                margin-bottom: 4px;
+            }
+
+
+            /* Action cells */
+
+            .customers-table td:nth-child(3),
+            .customers-table td:nth-child(4) {
+                width: 100% !important;
+                text-align: left !important;
+            }
+}

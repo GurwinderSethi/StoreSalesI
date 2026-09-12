@@ -8,8 +8,8 @@ const Navbar = () => {
     const handleItemClick = (e, { name }) => setActiveItem(name);
 
     return (
-        <Menu fixed="top" inverted>
-            <Container>
+        <Menu fixed="top" inverted className="main-navbar">
+            <Container className="navbar-container">
                 <Menu.Item
                     as={NavLink}
                     to='/'
@@ -47,5 +47,48 @@ const Navbar = () => {
         </Menu>
     );
 };
-
 export default Navbar;
+
+//import { Menu, Container } from "semantic-ui-react";
+//import { NavLink } from "react-router-dom";
+//import "./Navbar.css";
+
+//function Navbar() {
+//    return (
+//        <Menu fixed="top" inverted className="main-navbar">
+//            <Container className="navbar-container">
+
+//                <Menu.Item
+//                    as={NavLink}
+//                    to="/customers"
+//                >
+//                    Customers
+//                </Menu.Item>
+
+//                <Menu.Item
+//                    as={NavLink}
+//                    to="/products"
+//                >
+//                    Products
+//                </Menu.Item>
+
+//                <Menu.Item
+//                    as={NavLink}
+//                    to="/stores"
+//                >
+//                    Stores
+//                </Menu.Item>
+
+//                <Menu.Item
+//                    as={NavLink}
+//                    to="/sales"
+//                >
+//                    Sales
+//                </Menu.Item>
+
+//            </Container>
+//        </Menu>
+//    );
+//}
+
+//export default Navbar;

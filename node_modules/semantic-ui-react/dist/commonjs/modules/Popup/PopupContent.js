@@ -1,0 +1,44 @@
+"use strict";
+
+var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard").default;
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault").default;
+exports.__esModule = true;
+exports.default = void 0;
+var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/extends"));
+var _clsx = _interopRequireDefault(require("clsx"));
+var _propTypes = _interopRequireDefault(require("prop-types"));
+var React = _interopRequireWildcard(require("react"));
+var _lib = require("../../lib");
+/**
+ * A PopupContent displays the content body of a Popover.
+ */
+var PopupContent = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  var children = props.children,
+    className = props.className,
+    content = props.content;
+  var classes = (0, _clsx.default)('content', className);
+  var rest = (0, _lib.getUnhandledProps)(PopupContent, props);
+  var ElementType = (0, _lib.getComponentType)(props);
+  return /*#__PURE__*/React.createElement(ElementType, (0, _extends2.default)({}, rest, {
+    className: classes,
+    ref: ref
+  }), _lib.childrenUtils.isNil(children) ? content : children);
+});
+PopupContent.handledProps = ["as", "children", "className", "content"];
+PopupContent.displayName = 'PopupContent';
+PopupContent.propTypes = process.env.NODE_ENV !== "production" ? {
+  /** An element type to render as (string or function). */
+  as: _propTypes.default.elementType,
+  /** The content of the Popup */
+  children: _propTypes.default.node,
+  /** Classes to add to the Popup content className. */
+  className: _propTypes.default.string,
+  /** Shorthand for primary content. */
+  content: _lib.customPropTypes.contentShorthand
+} : {};
+PopupContent.create = (0, _lib.createShorthandFactory)(PopupContent, function (children) {
+  return {
+    children: children
+  };
+});
+var _default = exports.default = PopupContent;

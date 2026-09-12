@@ -8,7 +8,8 @@ import ActionButton from "../components/ActionButton";
 import { storeValidationSchema } from "../validations/storeValidation";
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import "../InventoryStore.css";
+//import "../InventoryStore.css";
+import "./Stores.css"; // Import the CSS file for styling"
 
 
 
@@ -140,21 +141,22 @@ function Stores() {
     )
     return (
         <div>
-            <Container style={{ marginTop: '998px', display: 'flex', alignItems: 'center' }}>
-                <div style={{ marginLeft: '120px' }}>
+            <Container className="stores-container">
+                <div className="stores-content">
 
-                    <ActionButton primary
-                        style={{ position: 'absolute', top: '70px', paddingBelow: '100px' }}
-                        id={"btnAddStore"}
-                        type={"button"}
-                        label={"Add Store"}
-                        clickhandler={handleAddStore}
-                        flag={actionType}
-                    />
+                    <div className="stores-header">
+                        <ActionButton
+                            primary
+                            id="btnAddStore"
+                            type="button"
+                            label="Add Store"
+                            clickhandler={handleAddStore}
+                            flag={actionType}
+                        />
+                    </div>
 
-
-                    <div style={{ marginTop: '100px', marginBottom: '100px' }}>
-                        <Table celled>
+                    <div className="stores-table-wrapper">
+                        <Table celled striped stackable className="stores-table">
                             <Table.Header>
                                 <Table.Row>
                                     <Table.HeaderCell>Name</Table.HeaderCell>
@@ -167,32 +169,37 @@ function Stores() {
                             <Table.Body>
                                 {stores.map((store) => (
                                     <Table.Row key={store.storeId}>
-                                        <Table.Cell>{store.storeName}</Table.Cell>
-                                        <Table.Cell>{store.storeAddress}</Table.Cell>
-                                        <Table.Cell>
+                                        <Table.Cell data-label="Name">
+                                            {store.storeName}
+                                        </Table.Cell>
 
+                                        <Table.Cell data-label="Address">
+                                            {store.storeAddress}
+                                        </Table.Cell>
 
+                                        <Table.Cell data-label="Edit">
                                             <ActionButton
-                                                circular icon color='yellow'
-                                                id={"btnEditStore"}
-                                                type={"button"}
-                                                label={"Edit"}
-                                                iconName={"edit"}
+                                                icon color="yellow"
+                                                id="btnEditStore"
+                                                type="button"
+                                                label="Edit"
+                                                iconName="edit"
                                                 clickhandler={() => handleEditStore(store)}
                                                 flag={actionType}
+                                                className="stores-action-button"
                                             />
-
                                         </Table.Cell>
-                                        <Table.Cell>
 
+                                        <Table.Cell data-label="Delete">
                                             <ActionButton
-                                                circular icon color='red'
-                                                id={"btnDeleteStore"}
-                                                type={"button"}
-                                                label={"Delete"}
-                                                iconName={"trash"}
+                                                icon color="red"
+                                                id="btnDeleteStore"
+                                                type="button"
+                                                label="Delete"
+                                                iconName="trash"
                                                 clickhandler={() => handleDeleteStore(store)}
                                                 flag={actionType}
+                                                className="stores-action-button"
                                             />
                                         </Table.Cell>
                                     </Table.Row>
@@ -201,16 +208,93 @@ function Stores() {
                         </Table>
                     </div>
                 </div>
-                <div>
-                    <GenricModal
-                        open={open}
-                        setOpen={setOpen}
-                        title={actionType === 'Add' ? 'Create Store' : actionType === 'Edit' ? 'Edit Store' : 'Delete Store'}
-                        label={actionType}
-                        formContent={formContent}
-                        onSubmit={handleSubmit(onSubmit)} />
-                </div>
+
+                <GenricModal
+                    open={open}
+                    setOpen={setOpen}
+                    title={
+                        actionType === "Add"
+                            ? "Create Store"
+                            : actionType === "Edit"
+                                ? "Edit Store"
+                                : "Delete Store"
+                    }
+                    label={actionType}
+                    formContent={formContent}
+                    onSubmit={handleSubmit(onSubmit)}
+                />
             </Container>
+            {/*<Container style={{ marginTop: '998px', display: 'flex', alignItems: 'center' }}>*/}
+            {/*    <div style={{ marginLeft: '120px' }}>*/}
+
+            {/*        <ActionButton primary*/}
+            {/*            style={{ position: 'absolute', top: '70px', paddingBelow: '100px' }}*/}
+            {/*            id={"btnAddStore"}*/}
+            {/*            type={"button"}*/}
+            {/*            label={"Add Store"}*/}
+            {/*            clickhandler={handleAddStore}*/}
+            {/*            flag={actionType}*/}
+            {/*        />*/}
+
+
+            {/*        <div style={{ marginTop: '100px', marginBottom: '100px' }}>*/}
+            {/*            <Table celled>*/}
+            {/*                <Table.Header>*/}
+            {/*                    <Table.Row>*/}
+            {/*                        <Table.HeaderCell>Name</Table.HeaderCell>*/}
+            {/*                        <Table.HeaderCell>Address</Table.HeaderCell>*/}
+            {/*                        <Table.HeaderCell>Actions</Table.HeaderCell>*/}
+            {/*                        <Table.HeaderCell>Actions</Table.HeaderCell>*/}
+            {/*                    </Table.Row>*/}
+            {/*                </Table.Header>*/}
+
+            {/*                <Table.Body>*/}
+            {/*                    {stores.map((store) => (*/}
+            {/*                        <Table.Row key={store.storeId}>*/}
+            {/*                            <Table.Cell>{store.storeName}</Table.Cell>*/}
+            {/*                            <Table.Cell>{store.storeAddress}</Table.Cell>*/}
+            {/*                            <Table.Cell>*/}
+
+
+            {/*                                <ActionButton*/}
+            {/*                                    circular icon color='yellow'*/}
+            {/*                                    id={"btnEditStore"}*/}
+            {/*                                    type={"button"}*/}
+            {/*                                    label={"Edit"}*/}
+            {/*                                    iconName={"edit"}*/}
+            {/*                                    clickhandler={() => handleEditStore(store)}*/}
+            {/*                                    flag={actionType}*/}
+            {/*                                />*/}
+
+            {/*                            </Table.Cell>*/}
+            {/*                            <Table.Cell>*/}
+
+            {/*                                <ActionButton*/}
+            {/*                                    circular icon color='red'*/}
+            {/*                                    id={"btnDeleteStore"}*/}
+            {/*                                    type={"button"}*/}
+            {/*                                    label={"Delete"}*/}
+            {/*                                    iconName={"trash"}*/}
+            {/*                                    clickhandler={() => handleDeleteStore(store)}*/}
+            {/*                                    flag={actionType}*/}
+            {/*                                />*/}
+            {/*                            </Table.Cell>*/}
+            {/*                        </Table.Row>*/}
+            {/*                    ))}*/}
+            {/*                </Table.Body>*/}
+            {/*            </Table>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*    <div>*/}
+            {/*        <GenricModal*/}
+            {/*            open={open}*/}
+            {/*            setOpen={setOpen}*/}
+            {/*            title={actionType === 'Add' ? 'Create Store' : actionType === 'Edit' ? 'Edit Store' : 'Delete Store'}*/}
+            {/*            label={actionType}*/}
+            {/*            formContent={formContent}*/}
+            {/*            onSubmit={handleSubmit(onSubmit)} />*/}
+            {/*    </div>*/}
+            {/*</Container>*/}
         </div>
     )
 }

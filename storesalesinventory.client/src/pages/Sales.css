@@ -1,0 +1,165 @@
+/* =========================================
+   Sales Page
+   ========================================= */
+
+.sales-container {
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 80px auto 40px auto !important;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.sales-content {
+    width: 100%;
+}
+
+
+/* Add Sale button */
+
+.sales-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+
+/* Table wrapper */
+
+.sales-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* Table */
+
+.sales-table {
+    width: 100% !important;
+}
+
+    .sales-table td {
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+
+
+        /* Action columns */
+
+        .sales-table th:nth-child(5),
+        .sales-table th:nth-child(6),
+        .sales-table td:nth-child(5),
+        .sales-table td:nth-child(6) {
+            width: 90px;
+            text-align: center;
+        }
+        /* Action buttons */
+.sales-action-button {
+    border-radius: 20px !important;
+    min-width: 90px !important;
+    padding: 8px 14px !important;
+}
+
+
+/* =========================================
+   Tablet
+   ========================================= */
+
+@media screen and (max-width: 768px) {
+
+    .sales-container {
+        margin-top: 70px !important;
+        padding: 0 15px;
+    }
+
+    .sales-table {
+        font-size: 14px;
+    }
+
+        .sales-table th:nth-child(5),
+        .sales-table th:nth-child(6),
+        .sales-table td:nth-child(5),
+        .sales-table td:nth-child(6) {
+            width: 70px;
+        }
+}
+
+
+/* =========================================
+   Mobile
+   ========================================= */
+
+@media screen and (max-width: 600px) {
+
+    .sales-container {
+        margin-top: 60px !important;
+        padding: 0 10px;
+    }
+
+
+    /* Add Sale button */
+
+    .sales-header {
+        justify-content: flex-start;
+        margin-bottom: 15px;
+    }
+
+
+    /* Hide table heading */
+
+    .sales-table thead {
+        display: none;
+    }
+
+
+    /* Convert table to cards */
+
+    .sales-table,
+    .sales-table tbody,
+    .sales-table tr,
+    .sales-table td {
+        display: block !important;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+
+        /* Individual sale card */
+
+        .sales-table tr {
+            margin-bottom: 15px;
+            border: 1px solid #ddd !important;
+            border-radius: 8px;
+            padding: 10px;
+            background: white;
+        }
+
+
+        /* Cells */
+
+        .sales-table td {
+            border: none !important;
+            padding: 8px !important;
+            text-align: left !important;
+        }
+
+
+            /* Labels */
+
+            .sales-table td::before {
+                content: attr(data-label);
+                display: block;
+                font-weight: bold;
+                margin-bottom: 4px;
+            }
+
+
+            /* Action buttons */
+
+            .sales-table td:nth-child(5),
+            .sales-table td:nth-child(6) {
+                width: 100% !important;
+                text-align: left !important;
+            }
+}

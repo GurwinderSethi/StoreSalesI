@@ -8,9 +8,8 @@ import ActionButton from "../components/ActionButton";
 import { customerValidationSchema } from "../validations/customerValidation"; 
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import "../InventoryStore.css"; 
-
-
+//import "../InventoryStore.css"; 
+import "./Customers.css";
 
 function Customers() {
     const dispatch = useDispatch();
@@ -139,21 +138,20 @@ function Customers() {
     )
     return (
         <div>
-            <Container style={{ marginTop: '998px', display: 'flex', alignItems: 'center'}}>
-                <div style={{ marginLeft: '120px' }}>
-                   
+            <Container className="customers-container">
+                <div className="customers-content">
+                    <div className="customers-header">
                     <ActionButton primary
-                        style={{ position: 'absolute', top: '70px', paddingBelow: '100px' }}
                         id={"btnAddCustomer"}
                         type={"button"}
                         label={"Add Customer"}
                         clickhandler={handleAddCustomer}
                         flag={actionType}
                     />
-                           
-                   
-                    <div style={{ marginTop: '100px' ,marginBottom:'100px' }}>
-                    <Table celled>
+                      </div>
+
+                    <div className="customers-table-wrapper">
+                    <Table celled striped stackable className="customers-table">
                         <Table.Header>
                             <Table.Row>
                                 <Table.HeaderCell>Name</Table.HeaderCell>
@@ -166,32 +164,38 @@ function Customers() {
                         <Table.Body>
                             {customers.map((user) => (
                                 <Table.Row key={user.customerId}>
-                                    <Table.Cell>{user.customerName}</Table.Cell>
-                                    <Table.Cell>{user.customerAddress}</Table.Cell>
-                                    <Table.Cell>
+                                    <Table.Cell data-label="Name">
+                                        {user.customerName}
+                                    </Table.Cell>
+                                    <Table.Cell data-label="Address">
+                                        {user.customerAddress}
+                                    </Table.Cell>
+                                    <Table.Cell data-label="Edit">
                                       
 
                                         <ActionButton
-                                            circular icon color='yellow'
+                                            icon color='yellow'
                                             id={"btnEditCustomer"}
                                             type={"button"}
                                             label={"Edit"}
                                             iconName={"edit"}
                                             clickhandler={() => handleEditCustomer(user)}
                                             flag={actionType}
+                                            className="customers-action-button"
                                         />
                                                
                                     </Table.Cell>
-                                    <Table.Cell>
+                                    <Table.Cell data-label="Delete">
                                       
                                         <ActionButton
-                                            circular icon color='red'
+                                            icon color='red'
                                             id={"btnDeleteCustomer"}    
                                             type={"button"}
                                             label={"Delete"}
                                             iconName={"trash"} 
                                             clickhandler={() => handleDeleteCustomer(user)}
                                             flag={actionType}
+                                            className="customers-action-button"
                                         />
                                     </Table.Cell>
                                 </Table.Row>

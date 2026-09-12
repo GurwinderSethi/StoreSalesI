@@ -11,7 +11,8 @@ import ActionButton from "../components/ActionButton";
 import { saleValidationSchema } from "../validations/salesValidation";
 import { useForm,Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import "../InventoryStore.css";
+//import "../InventoryStore.css";
+import "./Sales.css";
 
 
 
@@ -210,7 +211,7 @@ function Sales() {
         <Form>
                 <Form.Field>
                 <label> Date Sold</label>
-                <Input type="datetime-local" {...register("dateSold")} name="dateSold" value={formData.dateSold} onChange={handleChange} />
+                    <Input fluid type="datetime-local" {...register("dateSold")} name="dateSold" value={formData.dateSold} onChange={handleChange} />
                     {errors.dateSold &&( <p className="error-message">{errors.dateSold?.message}</p>)}
                  </Form.Field>
                  <Form.Field>
@@ -340,26 +341,20 @@ function Sales() {
     )
     return (
         <div>
-            <Container style={{ marginTop: '998px', display: 'flex', alignItems: 'center' }}>
-                <div style={{ marginLeft: '120px' }}>
-
+            <Container className="sales-container">
+                <div className="sales-content">
+                    <div className="sales-header">
                     <ActionButton primary
-                        style={{
-                            position: 'absolute',
-                            top: '70px',
-                            paddingBottom: '11px'
-                        }}
-
                         id={"btnAddSale"}
                         type={"button"}
                         label={"Add Sale"}
                         clickhandler={handleAddSale}
                         flag={actionType}
                     />
+                    </div>
 
-
-                    <div style={{ marginTop: '100px', marginBottom: '100px' }}>
-                        <Table celled>
+                    <div className="sales-table-wrapper">
+                        <Table celled striped className="sales-table">
                             <Table.Header>
                                 <Table.Row>
                                     <Table.HeaderCell>Customer</Table.HeaderCell>
@@ -374,34 +369,42 @@ function Sales() {
                             <Table.Body>
                                 {sales.map((sale) => (
                                     <Table.Row key={sale.id}>
-                                        <Table.Cell>{sale.customerName}</Table.Cell>
-                                        <Table.Cell>{sale.productName}</Table.Cell>
-                                        <Table.Cell>{sale.storeName}</Table.Cell>
-                                        <Table.Cell>{sale.dateSold}</Table.Cell>
-                                        <Table.Cell>
-
-
+                                        <Table.Cell data-label="Customer">
+                                            {sale.customerName}
+                                        </Table.Cell>
+                                        <Table.Cell data-label="Product">
+                                            {sale.productName}
+                                        </Table.Cell>
+                                        <Table.Cell data-label="Store">
+                                            {sale.storeName}
+                                        </Table.Cell>
+                                        <Table.Cell data-label="Date Sold">
+                                            {sale.dateSold}
+                                        </Table.Cell>
+                                        <Table.Cell data-label="Edit">
                                             <ActionButton
-                                                circular icon color='yellow'
+                                                icon color='yellow'
                                                 id={"btnEditSale"}
                                                 type={"button"}
                                                 label={"Edit"}
                                                 iconName={"edit"}
                                                 clickhandler={() => handleEditSale(sale)}
                                                 flag={actionType}
+                                                className="sales-action-button"
                                             />
 
                                         </Table.Cell>
-                                        <Table.Cell>
+                                        <Table.Cell data-label="Delete">
 
                                             <ActionButton
-                                                circular icon color='red'
+                                                icon color='red'
                                                 id={"btnDeleteSale"}
                                                 type={"button"}
                                                 label={"Delete"}
                                                 iconName={"trash"}
                                                 clickhandler={() => handleDeleteSale(sale)}
                                                 flag={actionType}
+                                                className="sales-action-button"
                                             />
                                         </Table.Cell>
                                     </Table.Row>

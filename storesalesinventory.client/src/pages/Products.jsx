@@ -8,9 +8,8 @@ import ActionButton from "../components/ActionButton";
 import { productValidationSchema } from "../validations/productValidation";
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import "../InventoryStore.css";
-
-
+//import "../InventoryStore.css";
+import "./Products.css";
 
 function Products() {
     const dispatch = useDispatch();
@@ -140,21 +139,20 @@ function Products() {
     )
     return (
         <div>
-            <Container style={{ marginTop: '998px', display: 'flex', alignItems: 'center' }}>
-                <div style={{ marginLeft: '120px' }}>
-
+            <Container className="products-container">
+                <div className="products-content">
+                    <div className="products-header">
                     <ActionButton primary
-                        style={{ position: 'absolute', top: '70px', paddingBelow: '100px' }}
                         id={"btnAddProduct"}
                         type={"button"}
                         label={"Add Product"}
                         clickhandler={handleAddProduct}
                         flag={actionType}
                     />
+                    </div>
 
-
-                    <div style={{ marginTop: '100px', marginBottom: '100px' }}>
-                        <Table celled>
+                    <div className="products-table-wrapper">
+                        <Table celled striped stackable className="products-table">
                             <Table.Header>
                                 <Table.Row>
                                     <Table.HeaderCell>Name</Table.HeaderCell>
@@ -167,32 +165,35 @@ function Products() {
                             <Table.Body>
                                 {products.map((product) => (
                                     <Table.Row key={product.productId}>
-                                        <Table.Cell>{product.productName}</Table.Cell>
-                                        <Table.Cell>{product.productPrice}</Table.Cell>
-                                        <Table.Cell>
-
-
+                                        <Table.Cell data-label="Name">
+                                            {product.productName}
+                                        </Table.Cell>
+                                        <Table.Cell data-label="Price">
+                                            {product.productPrice}
+                                        </Table.Cell>
+                                        <Table.Cell data-label="Edit">
                                             <ActionButton
-                                                circular icon color='yellow'
+                                                icon color='yellow'
                                                 id={"btnEditProduct"}
                                                 type={"button"}
                                                 label={"Edit"}
                                                 iconName={"edit"}
                                                 clickhandler={() => handleEditProduct(product)}
                                                 flag={actionType}
+                                                className="products-action-button"
                                             />
 
                                         </Table.Cell>
-                                        <Table.Cell>
-
+                                        <Table.Cell data-label="Delete">
                                             <ActionButton
-                                                circular icon color='red'
+                                                icon color='red'
                                                 id={"btnDeleteProduct"}
                                                 type={"button"}
                                                 label={"Delete"}
                                                 iconName={"trash"}
                                                 clickhandler={() => handleDeleteProduct(product)}
                                                 flag={actionType}
+                                                className="products-action-button"
                                             />
                                         </Table.Cell>
                                     </Table.Row>

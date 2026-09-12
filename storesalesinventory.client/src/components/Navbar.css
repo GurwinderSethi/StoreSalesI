@@ -1,0 +1,98 @@
+/* =========================================
+   Main Navbar
+   ========================================= */
+
+.main-navbar {
+    width: 100%;
+    min-height: 60px;
+}
+
+
+/* Navbar container */
+
+.navbar-container {
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+/* Navbar menu items */
+
+.main-navbar .item {
+    font-size: 15px;
+    padding: 20px 16px !important;
+}
+
+
+/* Logo / brand */
+
+.main-navbar .header.item {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   Tablet
+   ========================================= */
+
+@media screen and (max-width: 768px) {
+
+    .navbar-container {
+        padding: 0 10px;
+    }
+
+    .main-navbar .item {
+        font-size: 14px;
+        padding: 18px 10px !important;
+    }
+
+    .main-navbar .header.item {
+        font-size: 16px;
+    }
+}
+
+
+/* =========================================
+   Mobile
+   ========================================= */
+
+@media screen and (max-width: 600px) {
+
+    .main-navbar {
+        min-height: auto;
+    }
+
+    .navbar-container {
+        padding: 0 5px;
+    }
+
+    .main-navbar .item {
+        font-size: 12px;
+        padding: 15px 7px !important;
+    }
+
+    .main-navbar .header.item {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================
+   Very small phones
+   ========================================= */
+
+@media screen and (max-width: 400px) {
+
+    .main-navbar .item {
+        font-size: 11px;
+        padding: 14px 5px !important;
+    }
+
+    .main-navbar .header.item {
+        font-size: 13px;
+    }
+}

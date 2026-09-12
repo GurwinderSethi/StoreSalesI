@@ -1,0 +1,35 @@
+"use strict";
+
+var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard").default;
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault").default;
+exports.__esModule = true;
+exports.default = void 0;
+var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/extends"));
+var React = _interopRequireWildcard(require("react"));
+var _lib = require("../../lib");
+var _Image = _interopRequireDefault(require("../../elements/Image"));
+/**
+ * An item can contain an image.
+ */
+var ItemImage = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  var size = props.size;
+  var rest = (0, _lib.getUnhandledProps)(ItemImage, props);
+  return /*#__PURE__*/React.createElement(_Image.default, (0, _extends2.default)({}, rest, {
+    size: size,
+    ui: !!size,
+    wrapped: true,
+    ref: ref
+  }));
+});
+ItemImage.handledProps = ["size"];
+ItemImage.displayName = 'ItemImage';
+ItemImage.propTypes = process.env.NODE_ENV !== "production" ? {
+  /** An image may appear at different sizes. */
+  size: _Image.default.propTypes.size
+} : {};
+ItemImage.create = (0, _lib.createShorthandFactory)(ItemImage, function (src) {
+  return {
+    src: src
+  };
+});
+var _default = exports.default = ItemImage;
