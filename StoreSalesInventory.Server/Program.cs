@@ -3,6 +3,17 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var connectionString =
+    builder.Environment.IsDevelopment()
+        ? builder.Configuration.GetConnectionString("Database")
+        : builder.Configuration.GetConnectionString("ProductionDatabase");
+
+if (string.IsNullOrWhiteSpace(connectionString))
+{
+    throw new InvalidOperationException(
+        "Database connection string is not configured.");
+}
+
 // Add services to the container.
 builder.Services.AddCors(options =>
 {
@@ -20,8 +31,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<MvpcustomerSalesContext>(option =>
-option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString")));
+//builder.Services.AddDbContext<MvpcustomerSalesContext>(option =>
+//option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString")));
+builder.Services.AddDbContext<MvpcustomerSalesContext>(options =>
+    options.UseSqlServer(connectionString));
 
 
 var app = builder.Build();

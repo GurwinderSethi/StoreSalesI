@@ -1,0 +1,74 @@
+# ==========================================
+# StoreSalesInventory - Git Ignore
+# ==========================================
+
+# ------------------------------
+# Node.js / React / Vite
+# ------------------------------
+node_modules/
+dist/
+dist-ssr/
+
+# Environment files
+.env
+.env.*
+*.local
+
+# npm / Yarn / pnpm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ------------------------------
+# .NET build output
+# ------------------------------
+**/bin/
+**/obj/
+
+# ASP.NET generated files
+StoreSalesInventory.Server/wwwroot/
+
+# ------------------------------
+# Visual Studio
+# ------------------------------
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ------------------------------
+# Visual Studio Code
+# ------------------------------
+.vscode/*
+!.vscode/extensions.json
+
+# ------------------------------
+# JetBrains / Rider
+# ------------------------------
+.idea/
+
+# ------------------------------
+# Operating system files
+# ------------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------------
+# Visual Studio / project files
+# ------------------------------
+*.njsproj
+*.ntvs*
+*.sw?
+
+# Visual Studio publish user settings
+*.pubxml.user
+
+# Azure / Visual Studio deployment files
+**/Properties/PublishProfiles/
+**/Properties/ServiceDependencies/
+
+# Visual Studio Code local settings
+.vscode/

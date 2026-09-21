@@ -6,5 +6,8 @@ export const productValidationSchema = Yup.object().shape({
             'Name can only contain letters, spaces, hyphens, or apostrophes'
         ),
 
-    productPrice: Yup.number().min(0, 'Product price must be a positive number').required('Product price is required'),
+    productPrice: Yup.number()
+        .typeError('Product price must be a valid number')
+        .min(0, 'Product price cannot be negative')
+        .required('Product price is required'),
 });

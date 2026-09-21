@@ -35,4 +35,18 @@
 
   <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
 
+	<Target Name="BuildReactApp" BeforeTargets="Publish">
+		<Exec WorkingDirectory="$(SpaRoot)" Command="npm.cmd install --force" />
+		<Exec WorkingDirectory="$(SpaRoot)" Command="npm.cmd run build" />
+
+		<ItemGroup>
+			<ReactDistFiles Include="$(SpaRoot)\dist\**\*" />
+		</ItemGroup>
+
+		<Copy
+			SourceFiles="@(ReactDistFiles)"
+			DestinationFiles="@(ReactDistFiles->'$(ProjectDir)wwwroot\%(RecursiveDir)%(Filename)%(Extension)')"
+			SkipUnchangedFiles="true" />
+	</Target>
+
 </Project>

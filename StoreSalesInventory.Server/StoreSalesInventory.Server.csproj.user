@@ -11,6 +11,6 @@
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_DbContextTypeFullName>StoreSalesInventory.Server.Models.MvpcustomerSalesContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
-    <NameOfLastUsedPublishProfile>C:\Users\hp\Documents\coding-practices\MVP\StoreSalesInventory\StoreSalesInventory.Server\Properties\PublishProfiles\StoreSalesInventoryServer20260905014726 - Zip Deploy.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>C:\Users\hp\Documents\coding-practices\MVP\StoreSalesInventory\StoreSalesInventory.Server\Properties\PublishProfiles\storesalesinventory-app-2026 - Web Deploy2.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

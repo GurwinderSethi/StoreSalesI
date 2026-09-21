@@ -22,15 +22,34 @@ function Customers() {
     const [error, setError] = useState(null);
     const apiUrl = import.meta.env.VITE_API_URL;
 
-    const { register, handleSubmit, formState: { errors,isSubmitSuccessful},reset } = useForm({
+    const
+        {
+            register,
+            handleSubmit,
+            formState:
+            {
+                errors,
+                isSubmitSuccessful
+            },
+            reset,
+            setValue
+        } = useForm({
         resolver: yupResolver(customerValidationSchema),
-        mode:'onTouched'
+        mode: 'onSubmit',
+        reValidateMode: 'onChange'
     });
 
-
-   
     const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
+        const { name, value } = e.target;
+
+        setFormData({
+            ...formData,
+            [name]: value
+        });
+
+        setValue(name, value, {
+            shouldValidate: true
+        });
     };
     const handleAddCustomer = () => {
         setFormData({ customerName: '', customerAddress: '' }); // Reset form

@@ -41,9 +41,22 @@ function Sales() {
     const apiUrl = import.meta.env.VITE_API_URL;
    
 
-    const { register,control, handleSubmit, formState: { errors, isSubmitSuccessful }, reset } = useForm({
+    const
+        {
+            register,
+            control,
+            handleSubmit,
+            formState:
+            {
+                errors,
+                isSubmitSuccessful
+            },
+            reset,
+            setValue
+        } = useForm({
         resolver: yupResolver(saleValidationSchema),
-        mode: 'onTouched',
+        mode: 'onSubmit',
+        reValidateMode: 'onChange',
         defaultValues: {
             customer: '',
             product: '',
@@ -71,19 +84,21 @@ function Sales() {
         value: store.storeId
     }));
    
+    const handleChange = (e) => {
+        const { name, value } = e.target;
 
-    
-    const handleChange = (e, { name, value}) => {
-        console.log('handleChange called with name:', name, 'and value:', value);
-       
-        
-        
         if (name === 'dateSold') {
-          
-            setFormData((prev) => ({ ...prev, dateSold: value }));
-            console.log('Updated formData with dateSold:', formData);
+            setFormData(prev => ({
+                ...prev,
+                dateSold: value
+            }));
+
+            setValue(name, value, {
+                shouldValidate: true
+            });
         }
     };
+   
     const handleAddSale = () => {
        
         setFormData({
@@ -97,7 +112,6 @@ function Sales() {
         setOpen(true)
         reset({ customer: '', product: '', store: '', dateSold: '' }); // Reset form validation state
         
-        console.log('handleAddSale called, formData reset to:', formData);
     }
     const handleEditSale = (sale) => {
         setActionType('Edit')
@@ -132,7 +146,6 @@ function Sales() {
     const onSubmit = async () => {
         if (actionType === 'Add') {
             try {
-                console.log('Submitting formData for addition:', formData);
                 await axios.post(`${apiUrl}/Sale`, formData);
                 dispatch(addSale(formData)); // Update Redux store
                 await fetchSales(); // Refresh data after adding
@@ -158,7 +171,6 @@ function Sales() {
             }
 
         } else if (actionType === 'Delete') {
-            console.log('Deleting sale with ID:', formData.saleId);
            
             try {
                 await axios.delete(`${apiUrl}/Sale/${formData.saleId}`, {
