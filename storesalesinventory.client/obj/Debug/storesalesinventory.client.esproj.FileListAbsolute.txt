@@ -1,1 +1,0 @@
-C:\Users\hp\Documents\coding-practices\MVP\StoreSalesInventory\storesalesinventory.client\obj\Debug\storesalesinventory.client.esproj.CoreCompileInputs.cache

@@ -37,7 +37,15 @@ function Products() {
         resolver: yupResolver(productValidationSchema),
         mode: 'onSubmit',
         reValidateMode: 'onChange'
-    });
+        });
+
+    const formatPrice = (price) => {
+        if (price === null || price === undefined || price === '') {
+            return '';
+        }
+
+        return `$${Number(price).toFixed(2)}`;
+    };
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -188,7 +196,7 @@ function Products() {
                                             {product.productName}
                                         </Table.Cell>
                                         <Table.Cell data-label="Price">
-                                            {product.productPrice}
+                                            {formatPrice(product.productPrice)}
                                         </Table.Cell>
                                         <Table.Cell data-label="Edit">
                                             <ActionButton

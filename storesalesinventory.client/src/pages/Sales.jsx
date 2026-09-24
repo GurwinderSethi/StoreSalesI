@@ -11,8 +11,8 @@ import ActionButton from "../components/ActionButton";
 import { saleValidationSchema } from "../validations/salesValidation";
 import { useForm,Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-//import "../InventoryStore.css";
 import "./Sales.css";
+import { format, parseISO, isValid } from 'date-fns';
 
 
 
@@ -26,7 +26,6 @@ function Sales() {
     const [open, setOpen] = useState(false);
     const [actionType, setActionType] = useState(''); // 'add' or 'edit']
     const [formData, setFormData] = useState({
-       // saleId: 0,
         product_Id: 0,
         customer_Id : 0,
         store_Id: 0,
@@ -83,6 +82,24 @@ function Sales() {
         text: store.storeName,
         value: store.storeId
     }));
+
+    const formatTableDate = (date) => {
+        if (!date) return '';
+        return format(parseISO(date), 'd MMMM, yyyy');
+    };
+
+    
+    const formatFormDate = (date) => {
+        if (!date) return '';
+
+        const parsedDate = parseISO(date);
+
+        if (!isValid(parsedDate)) {
+            return '';
+        }
+
+        return format(parsedDate, 'yyyy-MM-dd');
+    };
    
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -102,8 +119,13 @@ function Sales() {
     const handleAddSale = () => {
        
         setFormData({
-            product_Id: formData.product_Id, customer_Id: formData.customer_Id,
-            store_Id: formData.store_Id, dateSold: formData.dateSold, customerName: formData.customerName, productName: formData.productName, storeName: formData.storeName
+            product_Id: formData.product_Id,
+            customer_Id: formData.customer_Id,
+            store_Id: formData.store_Id,
+            dateSold: formData.dateSold,
+            customerName: formData.customerName,
+            productName: formData.productName,
+            storeName: formData.storeName
            
         }); // Reset form
         
@@ -113,17 +135,34 @@ function Sales() {
         reset({ customer: '', product: '', store: '', dateSold: '' }); // Reset form validation state
         
     }
+   
     const handleEditSale = (sale) => {
-        setActionType('Edit')
-        setFormData(sale)
-        setOpen(true)
-        reset({ customer: sale.customerName, product: sale.productName, store: sale.storeName, dateSold: sale.dateSold }); // Reset form validation state
-    }
+        setActionType('Edit');
+
+        setFormData({
+            ...sale,
+            dateSold: formatFormDate(sale.dateSold)
+        });
+
+        setOpen(true);
+
+        reset({
+            customer: sale.customer_Id,
+            product: sale.product_Id,
+            store: sale.store_Id,
+            dateSold: formatFormDate(sale.dateSold)
+        });
+    };
     const handleDeleteSale = (sale) => {
         setActionType('Delete')
         setFormData(sale)
         setOpen(true)
-        reset({ customer: sale.customerName, product: sale.productName, store: sale.storeName, dateSold: sale.dateSold }); // Reset form validation state
+        reset({
+            customer: sale.customerName,
+            product: sale.productName,
+            store: sale.storeName,
+            dateSold: sale.dateSold
+        }); // Reset form validation state
     }
     const fetchSales = async () => {
         try {
@@ -144,9 +183,16 @@ function Sales() {
         }
     };
     const onSubmit = async () => {
+
+      
+        const apiFormData = {
+            ...formData,
+            dateSold: formData.dateSold
+        };
+
         if (actionType === 'Add') {
             try {
-                await axios.post(`${apiUrl}/Sale`, formData);
+                await axios.post(`${apiUrl}/Sale`, apiFormData);
                 dispatch(addSale(formData)); // Update Redux store
                 await fetchSales(); // Refresh data after adding
                 setOpen(false); // Close modal
@@ -154,22 +200,36 @@ function Sales() {
             } catch (error) {
                 console.error('Error saving data', error);
             }
-        } else if (actionType === 'Edit') {
-            
+        }
+        else if (actionType === 'Edit') {
             try {
-               // await saleValidationSchema.validate(formData);
-                await axios.put(`${apiUrl}/Sale/${formData.saleId}`, formData);
-                await fetchSales(); // Refresh data after editing
-                setOpen(false); // Close modal
-               
-                setFormData({
-                    product_Id: 0, customer_Id: 0,
-                    store_Id:0, dateSold: '', customerName: '', productName: '', storeName: ''
-                }); // Reset form
-            } catch (error) {
-                console.error('Error updating data', error);
-            }
+                const response = await axios.put(
+                    `${apiUrl}/Sale/${formData.saleId}`,
+                    apiFormData
+                );
 
+                console.log("Update response:", response.data);
+
+                await fetchSales();
+                setOpen(false);
+
+                setFormData({
+                    product_Id: 0,
+                    customer_Id: 0,
+                    store_Id: 0,
+                    dateSold: '',
+                    customerName: '',
+                    productName: '',
+                    storeName: ''
+                });
+
+            } catch (error) {
+                console.error("UPDATE FAILED");
+                console.error("Status:", error.response?.status);
+                console.error("Server response:", error.response?.data);
+                console.error("Full error:", error);
+            }
+             
         } else if (actionType === 'Delete') {
            
             try {
@@ -223,7 +283,13 @@ function Sales() {
         <Form>
                 <Form.Field>
                 <label> Date Sold</label>
-                    <Input fluid type="datetime-local" {...register("dateSold")} name="dateSold" value={formData.dateSold} onChange={handleChange} />
+                    <Input
+                        fluid
+                        type="date"
+                        {...register("dateSold")}
+                        name="dateSold"
+                        value={formData.dateSold}
+                        onChange={handleChange} />
                     {errors.dateSold &&( <p className="error-message">{errors.dateSold?.message}</p>)}
                  </Form.Field>
                  <Form.Field>
@@ -260,7 +326,7 @@ function Sales() {
           />
         )}
       />
-                    {/*<p className="error-message">{errors.customer?.message}</p>*/}
+                    
                     {errors.customer && (
                         <p className="error-message">
                             {errors.customer.message}
@@ -311,16 +377,7 @@ function Sales() {
                         name="store"
                         control={control}
                         render={({ field }) => (
-                            //<Form.Dropdown
-                            //    fluid
-                            //    selection
-                            //    search
-                            //    options={storeOptions}
-                            //    placeholder='Select Store'
-                            //    name={field.name}
-                            //    value={field.value}
-                            //    onChange={handleChange}
-                            ///>
+                           
                             <Form.Dropdown
                                 fluid
                                 selection
@@ -391,7 +448,8 @@ function Sales() {
                                             {sale.storeName}
                                         </Table.Cell>
                                         <Table.Cell data-label="Date Sold">
-                                            {sale.dateSold}
+                                           
+                                            {formatTableDate(sale.dateSold)}
                                         </Table.Cell>
                                         <Table.Cell data-label="Edit">
                                             <ActionButton
