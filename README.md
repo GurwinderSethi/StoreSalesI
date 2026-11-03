@@ -34,3 +34,7 @@ A full stack web app for managing customers, products, stores, and sales.
    ```
 
 6. Open `StoreSalesInventory.sln` in Visual Studio and start the project.
+
+## Screenshots
+<img width="1920" height="1080" alt="Screenshot (843)" src="https://github.com/user-attachments/assets/536e6e87-026f-4997-9246-4fe1b7ef97c6" />
+
