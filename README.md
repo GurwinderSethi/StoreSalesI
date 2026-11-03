@@ -1,4 +1,4 @@
-<img width="1920" height="865" alt="Screenshot (850)" src="https://github.com/user-attachments/assets/7660f259-b09c-4887-bd18-50fcd53e5b01" />
+
 # Store Sales Inventory
 
 A full stack web app for managing customers, products, stores, and sales.
