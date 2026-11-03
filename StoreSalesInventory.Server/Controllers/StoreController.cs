@@ -25,13 +25,8 @@ namespace StoreSalesInventory.Server.Controllers
 
         // GET: api/Store
         [HttpGet]
-        //public async Task<ActionResult<IEnumerable<Store>>> GetStores()
-        //{
-        //    return await _context.Stores.ToListAsync();
-        //}
         public async Task<ActionResult<IEnumerable<GetStoreDto>>> GetStores()
         {
-            //  var stores = await _context.Stores.ToListAsync();
             var _stores = await _context.Stores.Select(s => StoreMapper.MapToGetStoreDto(s)).ToListAsync();
             if (_stores.Count > 0)
             {
@@ -60,7 +55,6 @@ namespace StoreSalesInventory.Server.Controllers
         // PUT: api/Store/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        //public async Task<IActionResult> PutStore(int id, Store store)
         public async Task<IActionResult> PutStore(int id, UpdateStoreDto store)
         {
             if (id != store.StoreId)
@@ -92,7 +86,6 @@ namespace StoreSalesInventory.Server.Controllers
                 }
             }
 
-            // return NoContent();
             return Ok(new UpdateStoreDto
             {
                 StoreId = entity.Id,
@@ -112,24 +105,17 @@ namespace StoreSalesInventory.Server.Controllers
                 StoreName = store.StoreName,
                 StoreAddress = store.StoreAddress
             };
-            //var entity = new CreateStoreDto
-            //{
-            //    StoreName = createStoreDto.StoreName,
-            //    StoreAddress = createStoreDto.StoreAddress
-            //};
             var entity = new StoreMapper().MapToStoreModel(createStoreDto);
 
 
             _context.Stores.Add(entity);
             await _context.SaveChangesAsync();
 
-            //return CreatedAtAction("GetStore", new { id = entity.Store }, entity);
             return CreatedAtAction("GetStore", new { id = store.StoreId }, StoreMapper.MapToCreateStoreDto(entity));
         }
 
         // DELETE: api/Store/5
         [HttpDelete("{id}")]
-        // public async Task<IActionResult> DeleteStore(int id)
         public async Task<IActionResult> DeleteStore(DeleteStoreDto dto)
         {
             var store = await _context.Stores.FindAsync(dto.StoreId);

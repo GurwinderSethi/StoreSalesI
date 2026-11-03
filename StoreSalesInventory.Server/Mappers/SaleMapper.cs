@@ -13,9 +13,6 @@ namespace StoreSalesInventory.Server.Mappers
                 CustomerId = getSaleDto.Customer_Id,
                 StoreId = getSaleDto.Store_Id,
                 DateSold = getSaleDto.DateSold,
-               // CustomerName = getSaleDto.CustomerName,
-               // Product_Name = getSaleDto.ProductName,
-               // StoreName = getSaleDto.StoreName
             };
         }
         public static GetSaleDto MapToGetSaleDto(Sale getsale)

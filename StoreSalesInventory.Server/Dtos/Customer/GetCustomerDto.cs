@@ -7,13 +7,4 @@
         public string? CustomerAddress{ get; set; }
     }
 
-    //public Customer MapToCustomerModel(GetCustomerDto getCustomerDto)
-    //{
-    //    return new Customer
-    //    {
-    //        Id = getCustomerDto.CustomerId,
-    //        Name = getCustomerDto.CustomerName,
-    //        Address = getCustomerDto.CustomerEmail
-    //    };
-    //}
 }

@@ -26,10 +26,6 @@ namespace StoreSalesInventory.Server.Controllers
 
         // GET: api/Sale
         [HttpGet]
-        //public async Task<ActionResult<IEnumerable<Sale>>> GetSales()
-        //{
-        //    return await _context.Sales.ToListAsync();
-        //}
 
         public async Task<ActionResult<IEnumerable<GetSaleDto>>> GetSales()
         {
@@ -152,7 +148,6 @@ namespace StoreSalesInventory.Server.Controllers
         // PUT: api/Sale/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        //public async Task<IActionResult> PutSale(int id, Sale sale)
         public async Task<IActionResult> PutSale(int id, UpdateSaleDto sale)
         {
             if (id != sale.SaleId)
@@ -185,7 +180,6 @@ namespace StoreSalesInventory.Server.Controllers
                 }
             }
 
-            //return NoContent();
             return Ok(SaleMapper.MapToUpdateSaleDto(entity));
         }
 

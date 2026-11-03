@@ -36,7 +36,6 @@ namespace StoreSalesInventory.Server.Controllers
                 return BadRequest("There are no customers at the moment");
             }
 
-           // return await _context.Customers.ToListAsync();
         }
 
         // GET: api/Customer/5
@@ -86,7 +85,6 @@ namespace StoreSalesInventory.Server.Controllers
                 }
             }
 
-           // return NoContent();
            return Ok(new UpdateCustomerDto
            {
                CustomerId = entity.Id,
@@ -106,12 +104,7 @@ namespace StoreSalesInventory.Server.Controllers
                 Address = customer.CustomerAddress
             };
 
-            //{
-            //    CustomerId = 0,
-            //    CustomerName = customer.CustomerName,
-            //    CustomerAddress = customer.CustomerAddress
 
-            //});
             _context.Customers.Add(entity);
             await _context.SaveChangesAsync();
 
@@ -120,11 +113,9 @@ namespace StoreSalesInventory.Server.Controllers
 
         // DELETE: api/Customer/5
         [HttpDelete("{id}")]
-        //public async Task<IActionResult> DeleteCustomer(int id)
           public async Task<IActionResult> DeleteCustomer(DeleteCustomerDto dto)
         
            {
-            //var customer = await _context.Customers.FindAsync(id);
             var customer = await _context.Customers.FindAsync(dto.CustomerId);
             if (customer == null)
             {

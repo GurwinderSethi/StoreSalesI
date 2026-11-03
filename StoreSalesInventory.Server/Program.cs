@@ -31,8 +31,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//builder.Services.AddDbContext<MvpcustomerSalesContext>(option =>
-//option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString")));
 builder.Services.AddDbContext<MvpcustomerSalesContext>(options =>
     options.UseSqlServer(connectionString));
 

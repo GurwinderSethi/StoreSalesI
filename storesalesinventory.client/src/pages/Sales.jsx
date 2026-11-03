@@ -6,7 +6,7 @@ import { setProducts } from '../store/slices/productSlice';
 import { setStores } from '../store/slices/storeSlice'; 
 import { Container, Header, List, Form, Input, Button, Table, Loader, Message, Icon,Dropdown } from "semantic-ui-react";
 import axios from 'axios';
-import GenricModal from "../components/GenricModal";
+import GenericModal from "../components/GenericModal";
 import ActionButton from "../components/ActionButton";
 import { saleValidationSchema } from "../validations/salesValidation";
 import { useForm,Controller } from 'react-hook-form';
@@ -484,7 +484,7 @@ function Sales() {
                     </div>
                 </div>
                 <div>
-                    <GenricModal
+                    <GenericModal
                         open={open}
                         setOpen={setOpen}
                         title={actionType === 'Add' ? 'Create Sale' : actionType === 'Edit' ? 'Edit Sale' : 'Delete Sale'}

@@ -27,7 +27,6 @@ const TablePagination = () => (
         <TableBody>
             <TableRow>
                 <TableCell>
-                    {/* <Label ribbon>First</Label> */}
                     Cell
                 </TableCell>
                 <TableCell>Cell</TableCell>

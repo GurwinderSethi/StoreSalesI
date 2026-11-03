@@ -3,12 +3,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setCustomers,addCustomer,removeCustomer } from '../store/slices/customerSlice';
 import { Container, Header, List, Form, Input, Button,Table,Loader,Message,Icon } from "semantic-ui-react";
 import axios from 'axios';
-import GenricModal from "../components/GenricModal";
+import GenericModal from "../components/GenericModal";
 import ActionButton from "../components/ActionButton";
 import { customerValidationSchema } from "../validations/customerValidation"; 
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-//import "../InventoryStore.css"; 
 import "./Customers.css";
 
 function Customers() {
@@ -224,7 +223,7 @@ function Customers() {
                     </div>
                 </div>
                 <div>
-                    <GenricModal
+                    <GenericModal
                         open={open}
                         setOpen={setOpen}
                         title={actionType === 'Add' ? 'Create Customer':actionType === 'Edit'? 'Edit Customer':'Delete Customer'} 

@@ -25,10 +25,6 @@ namespace StoreSalesInventory.Server.Controllers
 
         // GET: api/Product
         [HttpGet]
-        //public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
-        //{
-        //    return await _context.Products.ToListAsync();
-        //}
 
         public async Task<ActionResult<IEnumerable<GetProductDto>>> GetProducts()
         {
@@ -57,14 +53,12 @@ namespace StoreSalesInventory.Server.Controllers
                 return NotFound();
             }
 
-            // return product;
             return ProductMapper.MapToGetProductDto(product);
         }
 
         // PUT: api/Product/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        // public async Task<IActionResult> PutProduct(int id, GetProductDto product)
         public async Task<IActionResult> PutProduct(int id, UpdateProductDto product)
         {
             if (id != product.ProductId)
@@ -95,8 +89,6 @@ namespace StoreSalesInventory.Server.Controllers
                 }
             }
 
-            // return NoContent(); 
-            //  return Ok(ProductMapper.MapToGetProductDto(entity));
             return Ok(new UpdateProductDto
             {
                 ProductId = entity.Id,
@@ -108,7 +100,6 @@ namespace StoreSalesInventory.Server.Controllers
         // POST: api/Product
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        // public async Task<ActionResult<GetProductDto>> PostProduct(GetProductDto product)
         public async Task<ActionResult<CreateProductDto>> PostProduct(CreateProductDto product)
         {
             var getProductDto = new GetProductDto
@@ -118,30 +109,15 @@ namespace StoreSalesInventory.Server.Controllers
                 ProductPrice = product.ProductPrice
             };
             var entity = new ProductMapper().MapToProductModel(getProductDto);
-            //var createProductDto = new CreateProductDto
-            //{
-            //    ProductId = 0,
-            //    ProductName = product.ProductName,
-            //    ProductPrice = product.ProductPrice
-            //};
-            //var getProductDto = new GetProductDto
-            //{
-            //    ProductId = createProductDto.ProductId,
-            //    ProductName = createProductDto.ProductName,
-            //    ProductPrice = createProductDto.ProductPrice
-            //};
-           // var entity = new ProductMapper().MapToProductModel(getProductDto);
 
             _context.Products.Add(entity);
             await _context.SaveChangesAsync();
 
              return CreatedAtAction("GetProduct", new { id = product.ProductId }, ProductMapper.MapToCreateProductDto(entity));
-           // return CreatedAtAction("GetProduct", new { id = entity.Id }, ProductMapper.MapToCreateProductDto(entity));
         }
 
         // DELETE: api/Product/5
         [HttpDelete("{id}")]
-        // public async Task<IActionResult> DeleteProduct(int id)
         public async Task<IActionResult> DeleteProduct(DeleteProductDto dto)
         {
             var product = await _context.Products.FindAsync(dto.ProductId);

@@ -12,5 +12,4 @@ public partial class Product
     public decimal? Price { get; set; }
 
     public virtual ICollection<Sale> Sales { get; set; } = new List<Sale>();
-  //  public string ProductName { get; internal set; }
 }

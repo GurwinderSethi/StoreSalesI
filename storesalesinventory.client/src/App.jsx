@@ -1,9 +1,6 @@
-//import { useState } from 'react'
 import React from 'react';
-//import { useRef, useEffect} from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/NavBar';
-//import Menubar from './components/Menubar'
 import ActionButton from './components/ActionButton'
 import 'semantic-ui-css/semantic.min.css';
 import Customers from './Pages/Customers';
@@ -14,7 +11,6 @@ import Stores from './Pages/Stores';
 
 function App() {
     return (
-        //<Router>
         <div>
      <Navbar/>
             <div style={{ paddingTop: '60' }}>
