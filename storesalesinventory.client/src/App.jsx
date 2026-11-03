@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/NavBar';
+import Navbar from './components/Navbar';
 import ActionButton from './components/ActionButton'
 import 'semantic-ui-css/semantic.min.css';
-import Customers from './Pages/Customers';
-import Products from './Pages/Products';
-import Sales from './Pages/Sales';
-import Stores from './Pages/Stores';
+import Customers from './pages/Customers';
+import Products from './pages/Products';
+import Sales from './pages/Sales';
+import Stores from './pages/Stores';
 
 
 function App() {
